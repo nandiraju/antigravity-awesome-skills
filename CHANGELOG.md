@@ -99,7 +99,7 @@ The following skills are now correctly indexed and visible in the registry:
 ### Changed
 
 - **Documentation**: Added `docs/CI_DRIFT_FIX.md` as a canonical reference for resolving drift issues.
-- **Guidance**: Updated `GETTING_STARTED.md` counts to match the full registry (253+ skills).
+- **Guidance**: Updated `docs/GETTING_STARTED.md` counts to match the full registry (253+ skills).
 - **Maintenance**: Updated `MAINTENANCE.md` with strict protocols for handling generated files.
 
 ## [3.0.0] - 2026-01-25 - "The Governance Update"
@@ -259,7 +259,7 @@ The following skills are now correctly indexed and visible in the registry:
   - `cc-skill-project-guidelines-example`
   - `cc-skill-security-review`
   - `cc-skill-strategic-compact`
-- **Documentation**: New `WALKTHROUGH.md` for import process details.
+- **Documentation**: New `docs/WALKTHROUGH.md` for import process details.
 
 ### Changed
 

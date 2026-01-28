@@ -15,7 +15,7 @@ AI Agents (like **Claude Code**, **Gemini**, **Cursor**) are smart, but they lac
 
 ## ⚡️ Quick Start: The "Starter Packs"
 
-Don't panic about the 256+ skills. You don't need them all at once.
+Don't panic about the 552+ skills. You don't need them all at once.
 We have curated **Starter Packs** to get you running immediately.
 
 ### 1. Install the Repo
@@ -29,7 +29,7 @@ git clone https://github.com/sickn33/antigravity-awesome-skills.git .agent/skill
 
 ### 2. Pick Your Persona
 
-Find the bundle that matches your role (see [docs/BUNDLES.md](docs/BUNDLES.md)):
+Find the bundle that matches your role (see [BUNDLES.md](BUNDLES.md)):
 
 | Persona               | Bundle Name    | What's Inside?                                    |
 | :-------------------- | :------------- | :------------------------------------------------ |
@@ -84,13 +84,13 @@ We classify skills so you know what you're running:
 - 🔵 **Safe**: Community skills that are non-destructive (Read-only/Planning).
 - 🔴 **Risk**: Skills that modify systems or perform security tests (Authorized Use Only).
 
-_Check the [Full Registry](README.md#full-skill-registry-256256) for risk labels._
+_Check the [Skill Catalog](../CATALOG.md) for the full list._
 
 ---
 
 ## ❓ FAQ
 
-**Q: Do I need to install all 250 skills?**
+**Q: Do I need to install all 552 skills?**
 A: You clone the whole repo, but your AI only _reads_ the ones you ask for (or that are relevant). It's lightweight!
 
 **Q: Can I make my own skills?**
@@ -103,6 +103,6 @@ A: Yes, MIT License. Open Source forever.
 
 ## ⏭️ Next Steps
 
-1. [Browse the Bundles](docs/BUNDLES.md)
-2. [See Real-World Examples](docs/EXAMPLES.md)
-3. [Contribute a Skill](CONTRIBUTING.md)
+1. [Browse the Bundles](BUNDLES.md)
+2. [See Real-World Examples](EXAMPLES.md)
+3. [Contribute a Skill](../CONTRIBUTING.md)

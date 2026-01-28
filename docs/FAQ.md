@@ -11,11 +11,11 @@
 Skills are specialized instruction files that teach AI assistants how to handle specific tasks. Think of them as expert knowledge modules that your AI can load on-demand.
 **Simple analogy:** Just like you might consult different experts (a lawyer, a doctor, a mechanic), these skills let your AI become an expert in different areas when you need them.
 
-### Do I need to install all 256+ skills?
+### Do I need to install all 552+ skills?
 
 **No!** When you clone the repository, all skills are available, but your AI only loads them when you explicitly invoke them with `@skill-name`.
 It's like having a library - all books are there, but you only read the ones you need.
-**Pro Tip:** Use [Starter Packs](docs/BUNDLES.md) to install only what matches your role.
+**Pro Tip:** Use [Starter Packs](BUNDLES.md) to install only what matches your role.
 
 ### Which AI tools work with these skills?
 
@@ -116,7 +116,7 @@ Use the `@` symbol followed by the skill name:
 
 ### How do I know which skill to use?
 
-1. **Browse the README**: Check the [Full Skill Registry](README.md#full-skill-registry-256256).
+1. **Browse the catalog**: Check the [Skill Catalog](../CATALOG.md).
 2. **Search**: `ls skills/ | grep "keyword"`
 3. **Ask your AI**: "What skills do you have for testing?"
 
@@ -152,7 +152,7 @@ Include:
 - Fix typos
 - Add examples
 - Improve docs
-  Check out [CONTRIBUTING.md](CONTRIBUTING.md) for instructions.
+  Check out [CONTRIBUTING.md](../CONTRIBUTING.md) for instructions.
 
 ### My PR failed "Quality Bar" check. Why?
 

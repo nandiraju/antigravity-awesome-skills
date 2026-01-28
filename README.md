@@ -1,6 +1,6 @@
-# 🌌 Antigravity Awesome Skills: 257+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More
+# 🌌 Antigravity Awesome Skills: 552+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More
 
-> **The Ultimate Collection of 257+ Universal Agentic Skills for AI Coding Assistants — Claude Code, Gemini CLI, Codex CLI, Antigravity IDE, GitHub Copilot, Cursor, OpenCode**
+> **The Ultimate Collection of 552+ Universal Agentic Skills for AI Coding Assistants — Claude Code, Gemini CLI, Codex CLI, Antigravity IDE, GitHub Copilot, Cursor, OpenCode**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Anthropic-purple)](https://claude.ai)
@@ -11,7 +11,7 @@
 [![OpenCode](https://img.shields.io/badge/OpenCode-CLI-gray)](https://github.com/opencode-ai/opencode)
 [![Antigravity](https://img.shields.io/badge/Antigravity-DeepMind-red)](https://github.com/sickn33/antigravity-awesome-skills)
 
-**Antigravity Awesome Skills** is a curated, battle-tested library of **257 high-performance agentic skills** designed to work seamlessly across all major AI coding assistants:
+**Antigravity Awesome Skills** is a curated, battle-tested library of **552 high-performance agentic skills** designed to work seamlessly across all major AI coding assistants:
 
 - 🟣 **Claude Code** (Anthropic CLI)
 - 🔵 **Gemini CLI** (Google DeepMind)
@@ -29,7 +29,7 @@ This repository provides essential skills to transform your AI assistant into a 
 - [🔌 Compatibility & Invocation](#compatibility--invocation)
 - [📦 Features & Categories](#features--categories)
 - [🎁 Curated Collections (Bundles)](#curated-collections)
-- [📚 Browse 550+ Skills](#browse-550-skills)
+- [📚 Browse 552+ Skills](#browse-552-skills)
 - [🛠️ Installation](#installation)
 - [🤝 How to Contribute](#how-to-contribute)
 - [👥 Contributors & Credits](#credits--sources)
@@ -52,7 +52,7 @@ AI Agents (like Claude Code, Cursor, or Gemini) are smart, but they lack **speci
 
 ### 2. ⚡️ Quick Start (The "Bundle" Way)
 
-Don't install 250+ skills manually. Use our **Starter Packs**:
+Don't install 552+ skills manually. Use our **Starter Packs**:
 
 1.  **Clone the repo**:
     ```bash
@@ -70,7 +70,7 @@ Once installed, just ask your agent naturally:
 > "Use the **@brainstorming** skill to help me plan a SaaS."
 > "Run **@lint-and-validate** on this file."
 
-👉 **[Read the Full Getting Started Guide](GETTING_STARTED.md)**
+👉 **[Read the Full Getting Started Guide](docs/GETTING_STARTED.md)**
 
 ---
 
@@ -104,17 +104,23 @@ This repository aggregates the best capabilities from across the open-source com
 
 The repository is organized into specialized domains to transform your AI into an expert across the entire software development lifecycle:
 
-- **Engineering & Architecture**: 50+ skills for Backend, Frontend, DevOps, and System Design including `backend-architect`, `c4-architecture`, and `kubernetes-architect`.
-- **AI & Data**: 80+ skills covering LLMs, RAG, Agents (LangChain/CrewAI), and Data Engineering.
-- **Security**: 30+ skills for Penetration Testing, Code Auditing, and Security Compliance.
-- **Product & Business**: 35+ skills for Startup Analytics, Marketing Strategy, and SEO.
-- **Development**: 70+ skills for Python, TypeScript/JavaScript, Rust, Go, and more.
+| Category | Focus | Example skills |
+| :--- | :--- | :--- |
+| Architecture (52) | System design, ADRs, C4, and scalable patterns | `architecture`, `c4-context`, `senior-architect` |
+| Business (35) | Growth, pricing, CRO, SEO, and go-to-market | `copywriting`, `pricing-strategy`, `seo-audit` |
+| Data & AI (81) | LLM apps, RAG, agents, observability, analytics | `rag-engineer`, `prompt-engineer`, `langgraph` |
+| Development (72) | Language mastery, framework patterns, code quality | `typescript-expert`, `python-patterns`, `react-patterns` |
+| General (95) | Planning, docs, product ops, writing, guidelines | `brainstorming`, `doc-coauthoring`, `writing-plans` |
+| Infrastructure (72) | DevOps, cloud, serverless, deployment, CI/CD | `docker-expert`, `aws-serverless`, `vercel-deployment` |
+| Security (107) | AppSec, pentesting, vuln analysis, compliance | `api-security-best-practices`, `sql-injection-testing`, `vulnerability-scanner` |
+| Testing (21) | TDD, test design, fixes, QA workflows | `test-driven-development`, `testing-patterns`, `test-fixing` |
+| Workflow (17) | Automation, orchestration, jobs, agents | `workflow-automation`, `inngest`, `trigger-dev` |
 
 ## Curated Collections
 
 [Check out our Starter Packs in docs/BUNDLES.md](docs/BUNDLES.md) to find the perfect toolkit for your role.
 
-## Browse 550+ Skills
+## Browse 552+ Skills
 
 We have moved the full skill registry to a dedicated catalog to keep this README clean.
 
