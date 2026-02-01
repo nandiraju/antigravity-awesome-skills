@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-01-31T22:04:24.651Z",
-  "total": 618,
+  "generatedAt": "2026-02-01T07:22:00.871Z",
+  "total": 619,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -10669,6 +10669,30 @@
         "metrics"
       ],
       "path": "skills/quant-analyst/SKILL.md"
+    },
+    {
+      "id": "radix-ui-design-system",
+      "name": "radix-ui-design-system",
+      "description": "Build accessible design systems with Radix UI primitives. Headless component customization, theming strategies, and compound component patterns for production-grade UI libraries.",
+      "category": "architecture",
+      "tags": [
+        "radix",
+        "ui"
+      ],
+      "triggers": [
+        "radix",
+        "ui",
+        "accessible",
+        "primitives",
+        "headless",
+        "component",
+        "customization",
+        "theming",
+        "compound",
+        "grade",
+        "libraries"
+      ],
+      "path": "skills/radix-ui-design-system/SKILL.md"
     },
     {
       "id": "rag-engineer",

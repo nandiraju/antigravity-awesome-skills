@@ -3978,6 +3978,15 @@
     "source": "unknown"
   },
   {
+    "id": "radix-ui-design-system",
+    "path": "skills/radix-ui-design-system",
+    "category": "uncategorized",
+    "name": "radix-ui-design-system",
+    "description": "Build accessible design systems with Radix UI primitives. Headless component customization, theming strategies, and compound component patterns for production-grade UI libraries.",
+    "risk": "safe",
+    "source": "self"
+  },
+  {
     "id": "rag-engineer",
     "path": "skills/rag-engineer",
     "category": "uncategorized",

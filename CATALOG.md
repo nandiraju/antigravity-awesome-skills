@@ -1,10 +1,10 @@
 # Skill Catalog
 
-Generated at: 2026-01-31T22:04:24.651Z
+Generated at: 2026-02-01T07:22:00.871Z
 
-Total skills: 618
+Total skills: 619
 
-## architecture (58)
+## architecture (59)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -53,6 +53,7 @@ Total skills: 618
 | `production-code-audit` | Autonomously deep-scan entire codebase line-by-line, understand architecture and patterns, then systematically transform it to production-grade, corporate-le... | production, code, audit | production, code, audit, autonomously, deep, scan, entire, codebase, line, understand, architecture, then |
 | `projection-patterns` | Build read models and projections from event streams. Use when implementing CQRS read sides, building materialized views, or optimizing query performance in ... | projection | projection, read, models, projections, event, streams, implementing, cqrs, sides, building, materialized, views |
 | `prompt-engineering` | Expert guide on prompt engineering patterns, best practices, and optimization techniques. Use when user wants to improve prompts, learn prompting strategies,... | prompt, engineering | prompt, engineering, optimization, techniques, user, wants, improve, prompts, learn, prompting, debug, agent |
+| `radix-ui-design-system` | Build accessible design systems with Radix UI primitives. Headless component customization, theming strategies, and compound component patterns for productio... | radix, ui | radix, ui, accessible, primitives, headless, component, customization, theming, compound, grade, libraries |
 | `saga-orchestration` | Implement saga patterns for distributed transactions and cross-aggregate workflows. Use when coordinating multi-step business processes, handling compensatin... | saga | saga, orchestration, distributed, transactions, cross, aggregate, coordinating, multi, step, business, processes, handling |
 | `salesforce-development` | Expert patterns for Salesforce platform development including Lightning Web Components (LWC), Apex triggers and classes, REST/Bulk APIs, Connected Apps, and ... | salesforce | salesforce, development, platform, including, lightning, web, components, lwc, apex, triggers, classes, rest |
 | `skill-developer` | Create and manage Claude Code skills following Anthropic best practices. Use when creating new skills, modifying skill-rules.json, understanding trigger patt... | skill | skill, developer, claude, code, skills, following, anthropic, creating, new, modifying, rules, json |
