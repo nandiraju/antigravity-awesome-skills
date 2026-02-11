@@ -1,285 +1,293 @@
 #!/usr/bin/env python3
 """
-Sync Microsoft Skills Repository - v3
-Preserves original structure from skills/ directory and handles all locations
+Sync Microsoft Skills Repository - v4 (Flat Structure)
+Reads each SKILL.md frontmatter 'name' field and uses it as a flat directory
+name under skills/ to comply with the repository's indexing conventions.
 """
 
+import re
 import shutil
 import subprocess
 import tempfile
-from pathlib import Path
 import json
+from pathlib import Path
 
 MS_REPO = "https://github.com/microsoft/skills.git"
-TARGET_DIR = Path(__file__).parent.parent / "skills"
+REPO_ROOT = Path(__file__).parent.parent
+TARGET_DIR = REPO_ROOT / "skills"
+DOCS_DIR = REPO_ROOT / "docs"
+
 
 def clone_repo(temp_dir: Path):
-    """Clone Microsoft skills repository"""
+    """Clone Microsoft skills repository (shallow)."""
     print("🔄 Cloning Microsoft Skills repository...")
     subprocess.run(
         ["git", "clone", "--depth", "1", MS_REPO, str(temp_dir)],
-        check=True
+        check=True,
     )
 
-def find_all_skills(source_dir: Path):
-    """Find all SKILL.md files in the repository"""
-    all_skills = {}
-    
-    # Search in .github/skills/
-    github_skills = source_dir / ".github" / "skills"
-    if github_skills.exists():
-        for skill_dir in github_skills.iterdir():
-            if skill_dir.is_dir() and (skill_dir / "SKILL.md").exists():
-                all_skills[skill_dir.name] = skill_dir
-    
-    # Search in .github/plugins/
-    github_plugins = source_dir / ".github" / "plugins"
-    if github_plugins.exists():
-        for skill_file in github_plugins.rglob("SKILL.md"):
-            skill_dir = skill_file.parent
-            skill_name = skill_dir.name
-            if skill_name not in all_skills:
-                all_skills[skill_name] = skill_dir
-    
-    return all_skills
 
-def sync_skills_preserve_structure(source_dir: Path, target_dir: Path):
+def extract_skill_name(skill_md_path: Path) -> str | None:
+    """Extract the 'name' field from SKILL.md YAML frontmatter."""
+    try:
+        content = skill_md_path.read_text(encoding="utf-8")
+    except Exception:
+        return None
+
+    fm_match = re.search(r"^---\s*\n(.*?)\n---", content, re.DOTALL)
+    if not fm_match:
+        return None
+
+    for line in fm_match.group(1).splitlines():
+        match = re.match(r"^name:\s*(.+)$", line)
+        if match:
+            value = match.group(1).strip().strip("\"'")
+            if value:
+                return value
+    return None
+
+
+def generate_fallback_name(relative_path: Path) -> str:
     """
-    Sync skills preserving the original skills/ directory structure.
-    This is better than auto-categorization since MS already organized them.
+    Generate a fallback directory name when frontmatter 'name' is missing.
+    Converts a path like 'dotnet/compute/botservice' to 'ms-dotnet-compute-botservice'.
+    """
+    parts = [p for p in relative_path.parts if p]
+    return "ms-" + "-".join(parts)
+
+
+def find_skills_in_directory(source_dir: Path):
+    """
+    Walk the Microsoft repo's skills/ directory (which uses symlinks)
+    and resolve each to its actual SKILL.md content.
+    Returns list of dicts: {relative_path, skill_md_path, source_dir}.
     """
     skills_source = source_dir / "skills"
-    
+    results = []
+
     if not skills_source.exists():
-        print("  ⚠️  skills/ directory not found, will use flat structure")
-        return sync_skills_flat(source_dir, target_dir)
-    
-    # First, find all actual skill content
-    all_skills = find_all_skills(source_dir)
-    print(f"  📂 Found {len(all_skills)} total skills in repository")
-    
-    synced_count = 0
-    skill_metadata = []
-    
-    # Walk through the skills/ directory structure
+        return results
+
     for item in skills_source.rglob("*"):
-        # Skip non-directories
         if not item.is_dir():
             continue
-        
-        # Check if this directory (or its symlink target) contains a SKILL.md
+
         skill_md = None
-        skill_source_dir = None
-        
-        # If it's a symlink, resolve it
+        actual_dir = None
+
         if item.is_symlink():
             try:
                 resolved = item.resolve()
                 if (resolved / "SKILL.md").exists():
                     skill_md = resolved / "SKILL.md"
-                    skill_source_dir = resolved
-            except:
+                    actual_dir = resolved
+            except Exception:
                 continue
         elif (item / "SKILL.md").exists():
             skill_md = item / "SKILL.md"
-            skill_source_dir = item
-        
+            actual_dir = item
+
         if skill_md is None:
             continue
-        
-        # Get relative path from skills/ directory - this preserves MS's organization
+
         try:
             relative_path = item.relative_to(skills_source)
         except ValueError:
-            # Shouldn't happen, but handle it
             continue
-        
-        # Create target directory preserving structure
-        target_skill_dir = target_dir / "official" / "microsoft" / relative_path
-        target_skill_dir.mkdir(parents=True, exist_ok=True)
-        
-        # Copy SKILL.md
-        shutil.copy2(skill_md, target_skill_dir / "SKILL.md")
-        
-        # Copy other files from the actual skill directory
-        for file_item in skill_source_dir.iterdir():
-            if file_item.name != "SKILL.md" and file_item.is_file():
-                shutil.copy2(file_item, target_skill_dir / file_item.name)
-        
-        # Collect metadata
-        skill_metadata.append({
-            "path": str(relative_path),
-            "name": item.name,
-            "category": str(relative_path.parent),
-            "source": str(skill_source_dir.relative_to(source_dir))
-        })
-        
-        synced_count += 1
-        print(f"  ✅ Synced: {relative_path}")
-    
-    # Also sync any skills from .github/plugins that aren't symlinked in skills/
-    plugin_skills = find_plugin_skills(source_dir, skill_metadata)
-    if plugin_skills:
-        print(f"\n  📦 Found {len(plugin_skills)} additional plugin skills")
-        for plugin_skill in plugin_skills:
-            target_skill_dir = target_dir / "official" / "microsoft" / "plugins" / plugin_skill['name']
-            target_skill_dir.mkdir(parents=True, exist_ok=True)
-            
-            # Copy SKILL.md
-            shutil.copy2(plugin_skill['source'] / "SKILL.md", target_skill_dir / "SKILL.md")
-            
-            # Copy other files
-            for file_item in plugin_skill['source'].iterdir():
-                if file_item.name != "SKILL.md" and file_item.is_file():
-                    shutil.copy2(file_item, target_skill_dir / file_item.name)
-            
-            skill_metadata.append({
-                "path": f"plugins/{plugin_skill['name']}",
-                "name": plugin_skill['name'],
-                "category": "plugins",
-                "source": str(plugin_skill['source'].relative_to(source_dir))
-            })
-            
-            synced_count += 1
-            print(f"  ✅ Synced: plugins/{plugin_skill['name']}")
-    
-    return synced_count, skill_metadata
 
-def find_plugin_skills(source_dir: Path, already_synced: list):
-    """Find plugin skills that haven't been synced yet"""
-    synced_names = {s['name'] for s in already_synced}
-    plugin_skills = []
-    
+        results.append({
+            "relative_path": relative_path,
+            "skill_md": skill_md,
+            "source_dir": actual_dir,
+        })
+
+    return results
+
+
+def find_plugin_skills(source_dir: Path, already_synced_names: set):
+    """Find plugin skills in .github/plugins/ that haven't been synced yet."""
+    results = []
     github_plugins = source_dir / ".github" / "plugins"
-    if github_plugins.exists():
-        for skill_file in github_plugins.rglob("SKILL.md"):
-            skill_dir = skill_file.parent
-            skill_name = skill_dir.name
-            
-            if skill_name not in synced_names:
-                plugin_skills.append({
-                    'name': skill_name,
-                    'source': skill_dir
-                })
-    
-    return plugin_skills
+
+    if not github_plugins.exists():
+        return results
+
+    for skill_file in github_plugins.rglob("SKILL.md"):
+        skill_dir = skill_file.parent
+        skill_name = skill_dir.name
+
+        if skill_name not in already_synced_names:
+            results.append({
+                "relative_path": Path("plugins") / skill_name,
+                "skill_md": skill_file,
+                "source_dir": skill_dir,
+            })
+
+    return results
+
 
 def sync_skills_flat(source_dir: Path, target_dir: Path):
-    """Fallback: sync all skills in a flat structure"""
-    all_skills = find_all_skills(source_dir)
-    
+    """
+    Sync all Microsoft skills into a flat structure under skills/.
+    Uses frontmatter 'name' as directory name, with collision detection.
+    """
+    all_skill_entries = find_skills_in_directory(source_dir)
+    print(f"  📂 Found {len(all_skill_entries)} skills in skills/ directory")
+
     synced_count = 0
     skill_metadata = []
-    
-    for skill_name, skill_dir in all_skills.items():
-        target_skill_dir = target_dir / "official" / "microsoft" / skill_name
+    # name -> original relative_path (for collision logging)
+    used_names: dict[str, str] = {}
+
+    for entry in all_skill_entries:
+        skill_name = extract_skill_name(entry["skill_md"])
+
+        if not skill_name:
+            skill_name = generate_fallback_name(entry["relative_path"])
+            print(
+                f"  ⚠️  No frontmatter name for {entry['relative_path']}, using fallback: {skill_name}")
+
+        # Collision detection
+        if skill_name in used_names:
+            original = used_names[skill_name]
+            print(
+                f"  ⚠️  Name collision '{skill_name}': {entry['relative_path']} vs {original}")
+            # Append language prefix from path to disambiguate
+            lang = entry["relative_path"].parts[0] if entry["relative_path"].parts else "unknown"
+            skill_name = f"{skill_name}-{lang}"
+            print(f"       Resolved to: {skill_name}")
+
+        used_names[skill_name] = str(entry["relative_path"])
+
+        # Create flat target directory
+        target_skill_dir = target_dir / skill_name
         target_skill_dir.mkdir(parents=True, exist_ok=True)
-        
+
         # Copy SKILL.md
-        shutil.copy2(skill_dir / "SKILL.md", target_skill_dir / "SKILL.md")
-        
-        # Copy other files
-        for item in skill_dir.iterdir():
-            if item.name != "SKILL.md" and item.is_file():
-                shutil.copy2(item, target_skill_dir / item.name)
-        
+        shutil.copy2(entry["skill_md"], target_skill_dir / "SKILL.md")
+
+        # Copy other files from the skill directory
+        for file_item in entry["source_dir"].iterdir():
+            if file_item.name != "SKILL.md" and file_item.is_file():
+                shutil.copy2(file_item, target_skill_dir / file_item.name)
+
         skill_metadata.append({
-            "path": skill_name,
-            "name": skill_name,
-            "category": "root"
+            "flat_name": skill_name,
+            "original_path": str(entry["relative_path"]),
+            "source": "microsoft/skills",
         })
-        
+
         synced_count += 1
-        print(f"  ✅ Synced: {skill_name}")
-    
+        print(f"  ✅ {entry['relative_path']} → skills/{skill_name}/")
+
+    # Sync plugin skills
+    synced_names = set(used_names.keys())
+    plugin_entries = find_plugin_skills(
+        source_dir, {e["source_dir"].name for e in all_skill_entries})
+
+    if plugin_entries:
+        print(f"\n  📦 Found {len(plugin_entries)} additional plugin skills")
+        for entry in plugin_entries:
+            skill_name = extract_skill_name(entry["skill_md"])
+            if not skill_name:
+                skill_name = entry["source_dir"].name
+
+            if skill_name in synced_names:
+                skill_name = f"{skill_name}-plugin"
+
+            synced_names.add(skill_name)
+
+            target_skill_dir = target_dir / skill_name
+            target_skill_dir.mkdir(parents=True, exist_ok=True)
+
+            shutil.copy2(entry["skill_md"], target_skill_dir / "SKILL.md")
+
+            for file_item in entry["source_dir"].iterdir():
+                if file_item.name != "SKILL.md" and file_item.is_file():
+                    shutil.copy2(file_item, target_skill_dir / file_item.name)
+
+            skill_metadata.append({
+                "flat_name": skill_name,
+                "original_path": str(entry["relative_path"]),
+                "source": "microsoft/skills (plugin)",
+            })
+
+            synced_count += 1
+            print(f"  ✅ {entry['relative_path']} → skills/{skill_name}/")
+
     return synced_count, skill_metadata
 
-def create_attribution_file(target_dir: Path, metadata: list):
-    """Create attribution and metadata file"""
+
+def save_attribution(metadata: list):
+    """Save attribution metadata to docs/."""
+    DOCS_DIR.mkdir(parents=True, exist_ok=True)
     attribution = {
         "source": "microsoft/skills",
         "repository": "https://github.com/microsoft/skills",
         "license": "MIT",
         "synced_skills": len(metadata),
+        "structure": "flat (frontmatter name as directory name)",
         "skills": metadata,
-        "note": "Symlinks resolved and content copied for compatibility. Original directory structure preserved."
     }
-    
-    ms_dir = target_dir / "official" / "microsoft"
-    ms_dir.mkdir(parents=True, exist_ok=True)
-    
-    with open(ms_dir / "ATTRIBUTION.json", "w") as f:
+    with open(DOCS_DIR / "microsoft-skills-attribution.json", "w") as f:
         json.dump(attribution, f, indent=2)
 
-def copy_documentation(source_dir: Path, target_dir: Path):
-    """Copy LICENSE and README files"""
-    ms_dir = target_dir / "official" / "microsoft"
-    ms_dir.mkdir(parents=True, exist_ok=True)
-    
+
+def copy_license(source_dir: Path):
+    """Copy the Microsoft LICENSE to docs/."""
+    DOCS_DIR.mkdir(parents=True, exist_ok=True)
     if (source_dir / "LICENSE").exists():
-        shutil.copy2(source_dir / "LICENSE", ms_dir / "LICENSE")
-    
-    if (source_dir / "README.md").exists():
-        shutil.copy2(source_dir / "README.md", ms_dir / "README-MICROSOFT.md")
+        shutil.copy2(source_dir / "LICENSE", DOCS_DIR / "LICENSE-MICROSOFT")
+
 
 def main():
-    """Main sync function"""
-    print("🚀 Microsoft Skills Sync Script v3")
-    print("=" * 50)
-    
+    """Main sync function."""
+    print("🚀 Microsoft Skills Sync Script v4 (Flat Structure)")
+    print("=" * 55)
+
     with tempfile.TemporaryDirectory() as temp_dir:
         temp_path = Path(temp_dir)
-        
+
         try:
-            # Clone repository
             clone_repo(temp_path)
-            
-            # Create target directory
+
             TARGET_DIR.mkdir(parents=True, exist_ok=True)
-            
-            # Sync skills (preserving structure)
-            print("\n🔗 Resolving symlinks and preserving directory structure...")
-            count, metadata = sync_skills_preserve_structure(temp_path, TARGET_DIR)
-            
-            # Copy documentation
-            print("\n📄 Copying documentation...")
-            copy_documentation(temp_path, TARGET_DIR)
-            
-            # Create attribution file
-            print("📝 Creating attribution metadata...")
-            create_attribution_file(TARGET_DIR, metadata)
-            
-            print(f"\n✨ Success! Synced {count} Microsoft skills")
-            print(f"📁 Location: {TARGET_DIR / 'official' / 'microsoft'}")
-            
-            # Show structure summary
-            ms_dir = TARGET_DIR / "official" / "microsoft"
-            categories = set()
+
+            print("\n🔗 Resolving symlinks and flattening into skills/<name>/...")
+            count, metadata = sync_skills_flat(temp_path, TARGET_DIR)
+
+            print("\n📄 Saving attribution...")
+            save_attribution(metadata)
+            copy_license(temp_path)
+
+            print(
+                f"\n✨ Success! Synced {count} Microsoft skills (flat structure)")
+            print(f"📁 Location: {TARGET_DIR}/")
+
+            # Show summary of languages
+            languages = set()
             for skill in metadata:
-                cat = skill.get('category', 'root')
-                if cat != 'root':
-                    categories.add(cat.split('/')[0] if '/' in cat else cat)
-            
+                parts = skill["original_path"].split("/")
+                if len(parts) >= 1 and parts[0] != "plugins":
+                    languages.add(parts[0])
+
             print(f"\n📊 Organization:")
             print(f"  Total skills: {count}")
-            print(f"  Categories: {', '.join(sorted(categories)[:10])}")
-            if len(categories) > 10:
-                print(f"  ... and {len(categories) - 10} more")
-            
+            print(f"  Languages: {', '.join(sorted(languages))}")
+
             print("\n📋 Next steps:")
-            print("1. Review synced skills")
-            print("2. Run: npm run validate")
-            print("3. Update CATALOG.md")
-            print("4. Update docs/SOURCES.md")
-            print("5. Commit changes and create PR")
-            
+            print("1. Delete old skills/official/ directory (if it exists)")
+            print("2. Run: npm run build")
+            print("3. Commit changes and create PR")
+
         except Exception as e:
             print(f"\n❌ Error: {e}")
             import traceback
             traceback.print_exc()
             return 1
-    
+
     return 0
+
 
 if __name__ == "__main__":
     exit(main())
