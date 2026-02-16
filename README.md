@@ -1,6 +1,6 @@
-# 🌌 Antigravity Awesome Skills: 713+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More
+# 🌌 Antigravity Awesome Skills: 856+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More
 
-> **The Ultimate Collection of 713+ Universal Agentic Skills for AI Coding Assistants — Claude Code, Gemini CLI, Codex CLI, Antigravity IDE, GitHub Copilot, Cursor, OpenCode, AdaL**
+> **The Ultimate Collection of 856+ Universal Agentic Skills for AI Coding Assistants — Claude Code, Gemini CLI, Codex CLI, Antigravity IDE, GitHub Copilot, Cursor, OpenCode, AdaL**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Anthropic-purple)](https://claude.ai)
@@ -16,7 +16,7 @@
 
 If this project helps you, you can [support it here](https://buymeacoffee.com/sickn33) or simply ⭐ the repo.
 
-**Antigravity Awesome Skills** is a curated, battle-tested library of **713 high-performance agentic skills** designed to work seamlessly across all major AI coding assistants:
+**Antigravity Awesome Skills** is a curated, battle-tested library of **856 high-performance agentic skills** designed to work seamlessly across all major AI coding assistants:
 
 - 🟣 **Claude Code** (Anthropic CLI)
 - 🔵 **Gemini CLI** (Google DeepMind)
@@ -27,7 +27,7 @@ If this project helps you, you can [support it here](https://buymeacoffee.com/si
 - ⚪ **OpenCode** (Open-source CLI)
 - 🌸 **AdaL CLI** (Self-evolving Coding Agent)
 
-This repository provides essential skills to transform your AI assistant into a **full-stack digital agency**, including official capabilities from **Anthropic**, **OpenAI**, **Google**, **Supabase**, and **Vercel Labs**.
+This repository provides essential skills to transform your AI assistant into a **full-stack digital agency**, including official capabilities from **Anthropic**, **OpenAI**, **Google**, **Microsoft**, **Supabase**, and **Vercel Labs**.
 
 ## Table of Contents
 
@@ -36,8 +36,9 @@ This repository provides essential skills to transform your AI assistant into a 
 - [🛠️ Installation](#installation)
 - [🧯 Troubleshooting](#troubleshooting)
 - [🎁 Curated Collections (Bundles)](#curated-collections)
+- [🧭 Antigravity Workflows](#antigravity-workflows)
 - [📦 Features & Categories](#features--categories)
-- [📚 Browse 713+ Skills](#browse-713-skills)
+- [📚 Browse 856+ Skills](#browse-856-skills)
 - [🤝 How to Contribute](#how-to-contribute)
 - [🤝 Community](#community)
 - [☕ Support the Project](#support-the-project)
@@ -51,11 +52,11 @@ This repository provides essential skills to transform your AI assistant into a 
 
 ## New Here? Start Here!
 
-**Welcome to the V4.0.0 Enterprise Edition.** This isn't just a list of scripts; it's a complete operating system for your AI Agent.
+**Welcome to the V5.2.0 Workflows Edition.** This isn't just a list of scripts; it's a complete operating system for your AI Agent.
 
 ### 1. 🐣 Context: What is this?
 
-**Antigravity Awesome Skills** (Release 4.0.0) is a massive upgrade to your AI's capabilities.
+**Antigravity Awesome Skills** (Release 5.2.0) is a massive upgrade to your AI's capabilities.
 
 AI Agents (like Claude Code, Cursor, or Gemini) are smart, but they lack **specific tools**. They don't know your company's "Deployment Protocol" or the specific syntax for "AWS CloudFormation".
 **Skills** are small markdown files that teach them how to do these specific tasks perfectly, every time.
@@ -220,23 +221,46 @@ npx antigravity-awesome-skills
 They help you avoid picking from 700+ skills one by one.
 
 What bundles are:
+
 - Recommended starting sets for common workflows.
 - A shortcut for onboarding and faster execution.
 
 What bundles are not:
+
 - Not a separate install.
 - Not a locked preset.
 
 How to use bundles:
+
 1. Install the repository once.
 2. Pick one bundle in [docs/BUNDLES.md](docs/BUNDLES.md).
 3. Start with 3-5 skills from that bundle in your prompt.
 4. Add more only when needed.
 
 Examples:
+
 - Building a SaaS MVP: `Essentials` + `Full-Stack Developer` + `QA & Testing`.
 - Hardening production: `Security Developer` + `DevOps & Cloud` + `Observability & Monitoring`.
 - Shipping OSS changes: `Essentials` + `OSS Maintainer`.
+
+## Antigravity Workflows
+
+Bundles help you choose skills. Workflows help you execute them in order.
+
+- Use bundles when you need curated recommendations by role.
+- Use workflows when you need step-by-step execution for a concrete goal.
+
+Start here:
+
+- [docs/WORKFLOWS.md](docs/WORKFLOWS.md): human-readable playbooks.
+- [data/workflows.json](data/workflows.json): machine-readable workflow metadata.
+
+Initial workflows include:
+
+- Ship a SaaS MVP
+- Security Audit for a Web App
+- Build an AI Agent System
+- QA and Browser Automation (with optional `@go-playwright` support for Go stacks)
 
 ## Features & Categories
 
@@ -256,7 +280,7 @@ The repository is organized into specialized domains to transform your AI into a
 
 Counts change as new skills are added. For the current full registry, see [CATALOG.md](CATALOG.md).
 
-## Browse 713+ Skills
+## Browse 856+ Skills
 
 We have moved the full skill registry to a dedicated catalog to keep this README clean.
 
@@ -290,14 +314,17 @@ Please ensure your skill follows the Antigravity/Claude Code best practices.
 Support is optional. This project stays free and open-source for everyone.
 
 If this repository saves you time or helps you ship faster, you can support ongoing maintenance:
+
 - [☕ Buy me a book on Buy Me a Coffee](https://buymeacoffee.com/sickn33)
 
 Where support goes:
+
 - Skill curation, testing, and quality validation.
 - Documentation updates, examples, and onboarding improvements.
 - Faster triage and review of community issues and PRs.
 
 Prefer non-financial support:
+
 - Star the repository.
 - Open clear, reproducible issues.
 - Submit PRs (skills, docs, fixes).
@@ -328,6 +355,8 @@ This collection would not be possible without the incredible work of the Claude 
 - **[vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills)**: Vercel Labs official skills - React Best Practices, Web Design Guidelines.
 - **[openai/skills](https://github.com/openai/skills)**: OpenAI Codex skills catalog - Agent skills, Skill Creator, Concise Planning.
 - **[supabase/agent-skills](https://github.com/supabase/agent-skills)**: Supabase official skills - Postgres Best Practices.
+- **[microsoft/skills](https://github.com/microsoft/skills)**: Official Microsoft skills - Azure cloud services, Bot Framework, Cognitive Services, and enterprise development patterns across .NET, Python, TypeScript, Go, Rust, and Java.
+- **[google-gemini/gemini-skills](https://github.com/google-gemini/gemini-skills)**: Official Gemini skills - Gemini API, SDK and model interactions.
 
 ### Community Contributors
 

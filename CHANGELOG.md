@@ -7,6 +7,130 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [5.3.0] - 2026-02-13 - "Advanced Three.js & Modern Graphics"
+
+> **Enhanced Three.js patterns: performance, visual polish, and production practices.**
+
+This release significantly upgrades our 3D visualization capabilities with a comprehensive Three.js skill upgrade, focusing on CDN-compatible patterns, performance optimizations, and modern graphics techniques like shadows, fog, and GSAP integration.
+
+### Added
+
+- **Modern Three.js Patterns**: Comprehensive guide for `r128` (CDN) and production environments.
+- **Visual Polish**: Advanced sections for shadows, environment maps, and tone mapping.
+- **Interaction Models**: Custom camera controls (OrbitControls alternative) and raycasting for object selection.
+- **Production Readiness**: Integration patterns for GSAP, scroll-based animations, and build tool optimizations.
+
+### Registry
+
+- **Total Skills**: 856.
+- **Metadata**: Fixed missing source and risk fields for `threejs-skills`.
+- **Sync**: All discovery artifacts (README, Catalog, Index) updated and synced.
+
+### Contributors
+
+- **[@Krishna-hehe](https://github.com/Krishna-hehe)** - Advanced Three.js skill overhaul (PR #78).
+
+---
+
+> **New AI capabilities: Podcast Generation, Azure Identity, and Self-Evolving Agents.**
+
+### Added
+
+- **New Skill**: `podcast-generation` - Create multi-speaker podcasts from text/URLs using OpenAI Text-to-Speech (TTS) and pydub.
+- **New Skill**: `weevolve` - Self-evolving knowledge engine with recursive improvement protocol.
+- **Azure Skills Expansion**:
+  - `azure-ai-agents-persistent-dotnet`: Persistent agent patterns for .NET.
+  - `azure-ai-agents-persistent-java`: Persistent agent patterns for Java.
+  - `azd-deployment`: Azure Developer CLI deployment strategies.
+- **Python Enhancements**:
+  - `pydantic-models-py`: Robust data validation patterns.
+  - `fastapi-router-py`: Scalable API routing structures.
+
+### Registry
+
+- **Total Skills**: 856 (from 845).
+- **Generated Files**: Synced `skills_index.json`, `data/catalog.json`, and `README.md`.
+
+### Contributors
+
+- **[@sickn33](https://github.com/sickn33)** - Podcast Generation & Azure skills sync (PR #74).
+- **[@aro-brez](https://github.com/aro-brez)** - WeEvolve skill (Issue #75).
+
+---
+
+## [5.1.0] - 2026-02-12 - "Official Microsoft & Gemini Skills"
+
+> **845+ skills: the largest single-PR expansion ever, powered by official vendor collections.**
+
+Integrates the full official Microsoft skills collection (129 skills) and Google Gemini API development skills, significantly expanding Azure SDK coverage across .NET, Python, TypeScript, Java, and Rust, plus M365 Agents, Semantic Kernel, and wiki plugin skills.
+
+### Added
+
+- **129 Microsoft Official Skills** from [microsoft/skills](https://github.com/microsoft/skills):
+  - Azure SDKs across .NET, Python, TypeScript, Java, and Rust
+  - M365 Agents, Semantic Kernel, and wiki plugin skills
+  - Flat structure using YAML `name` field as directory name
+  - Attribution files: `docs/LICENSE-MICROSOFT`, `docs/microsoft-skills-attribution.json`
+- **Gemini API Skills**: Official Gemini API development skill under `skills/gemini-api-dev/`
+- **New Scripts & Tooling**:
+  - `scripts/sync_microsoft_skills.py` (v4): Flat-structure sync with collision detection, stale cleanup, and attribution metadata
+  - `scripts/tests/inspect_microsoft_repo.py`: Remote repo inspection
+  - `scripts/tests/test_comprehensive_coverage.py`: Coverage verification
+- **New npm scripts**: `sync:microsoft` and `sync:all-official` in `package.json`
+
+### Fixed
+
+- **`scripts/generate_index.py`**: Enhanced frontmatter parsing for unquoted `@` symbols and commas
+- **`scripts/build-catalog.js`**: Deterministic `generatedAt` timestamp (prevents CI drift)
+
+### Registry
+
+- **Total Skills**: 845 (from 626). All generated files synced.
+
+### Contributors
+
+- [@ar27111994](https://github.com/ar27111994) - Microsoft & Gemini skills integration (PR #73)
+
+---
+
+## [5.0.0] - 2026-02-10 - "Antigravity Workflows Foundation"
+
+> Workflows are now first-class: users can run guided, multi-skill playbooks instead of manually composing skills one by one.
+
+### Added
+
+- **New orchestration skill**: `antigravity-workflows`
+  - `skills/antigravity-workflows/SKILL.md`
+  - `skills/antigravity-workflows/resources/implementation-playbook.md`
+- **New workflow documentation**: `docs/WORKFLOWS.md`
+  - Introduces the Workflows model and differentiates it from Bundles.
+  - Provides execution playbooks with prerequisites, ordered steps, and prompt examples.
+- **New machine-readable workflow registry**: `data/workflows.json`
+  - `ship-saas-mvp`
+  - `security-audit-web-app`
+  - `build-ai-agent-system`
+  - `qa-browser-automation`
+
+### Changed
+
+- **README / Onboarding docs** updated to include Workflows discovery and usage:
+  - `README.md` (TOC + "Antigravity Workflows" section)
+  - `docs/GETTING_STARTED.md` (Bundles vs Workflows guidance)
+  - `docs/FAQ.md` (new Q&A: Bundles vs Workflows)
+- **Go browser automation alignment**:
+  - Workflow playbooks now include optional `@go-playwright` hooks for Go-based QA/E2E flows.
+- **Registry sync** after workflow skill addition:
+  - `CATALOG.md`
+  - `skills_index.json`
+  - `data/catalog.json`
+  - `data/bundles.json`
+
+### Contributors
+
+- [@sickn33](https://github.com/sickn33) - Workflows architecture, docs, and release integration
+
+---
+
 ## [4.11.0] - 2026-02-08 - "Clean Code & Registry Stability"
 
 > Quality improvements: Clean Code principles and deterministic builds.
