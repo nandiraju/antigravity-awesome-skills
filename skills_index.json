@@ -2673,6 +2673,15 @@
     "source": "unknown"
   },
   {
+    "id": "crypto-bd-agent",
+    "path": "skills/crypto-bd-agent",
+    "category": "uncategorized",
+    "name": "crypto-bd-agent",
+    "description": "Autonomous crypto business development patterns \u2014 multi-chain token discovery, 100-point scoring with wallet forensics, x402 micropayments, ERC-8004 on-chain identity, LLM cascade routing, and pipeline automation for CEX/DEX listing acquisition. Use when building AI agents for crypto BD, token evaluation, exchange listing outreach, or autonomous commerce with payment protocols.\n",
+    "risk": "safe",
+    "source": "community"
+  },
+  {
     "id": "csharp-pro",
     "path": "skills/csharp-pro",
     "category": "uncategorized",
@@ -2853,6 +2862,33 @@
     "source": "unknown"
   },
   {
+    "id": "dbos-golang",
+    "path": "skills/dbos-golang",
+    "category": "uncategorized",
+    "name": "dbos-golang",
+    "description": "DBOS Go SDK for building reliable, fault-tolerant applications with durable workflows. Use this skill when writing Go code with DBOS, creating workflows and steps, using queues, using the DBOS Client from external applications, or building Go applications that need to be resilient to failures.",
+    "risk": "safe",
+    "source": "https://docs.dbos.dev/"
+  },
+  {
+    "id": "dbos-python",
+    "path": "skills/dbos-python",
+    "category": "uncategorized",
+    "name": "dbos-python",
+    "description": "DBOS Python SDK for building reliable, fault-tolerant applications with durable workflows. Use this skill when writing Python code with DBOS, creating workflows and steps, using queues, using DBOSClient from external applications, or building applications that need to be resilient to failures.",
+    "risk": "safe",
+    "source": "https://docs.dbos.dev/"
+  },
+  {
+    "id": "dbos-typescript",
+    "path": "skills/dbos-typescript",
+    "category": "uncategorized",
+    "name": "dbos-typescript",
+    "description": "DBOS TypeScript SDK for building reliable, fault-tolerant applications with durable workflows. Use this skill when writing TypeScript code with DBOS, creating workflows and steps, using queues, using DBOSClient from external applications, or building applications that need to be resilient to failures.",
+    "risk": "safe",
+    "source": "https://docs.dbos.dev/"
+  },
+  {
     "id": "dbt-transformation-patterns",
     "path": "skills/dbt-transformation-patterns",
     "category": "uncategorized",
@@ -2860,6 +2896,33 @@
     "description": "Master dbt (data build tool) for analytics engineering with model organization, testing, documentation, and incremental strategies. Use when building data transformations, creating data models, or implementing analytics engineering best practices.",
     "risk": "unknown",
     "source": "unknown"
+  },
+  {
+    "id": "ddd-context-mapping",
+    "path": "skills/ddd-context-mapping",
+    "category": "uncategorized",
+    "name": "ddd-context-mapping",
+    "description": "Map relationships between bounded contexts and define integration contracts using DDD context mapping patterns.",
+    "risk": "safe",
+    "source": "self"
+  },
+  {
+    "id": "ddd-strategic-design",
+    "path": "skills/ddd-strategic-design",
+    "category": "uncategorized",
+    "name": "ddd-strategic-design",
+    "description": "Design DDD strategic artifacts including subdomains, bounded contexts, and ubiquitous language for complex business domains.",
+    "risk": "safe",
+    "source": "self"
+  },
+  {
+    "id": "ddd-tactical-patterns",
+    "path": "skills/ddd-tactical-patterns",
+    "category": "uncategorized",
+    "name": "ddd-tactical-patterns",
+    "description": "Apply DDD tactical patterns in code using entities, value objects, aggregates, repositories, and domain events with explicit invariants.",
+    "risk": "safe",
+    "source": "self"
   },
   {
     "id": "debugger",
@@ -3103,6 +3166,15 @@
     "description": "Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. When Claude needs to work with professional documents (.docx files) for: (1) Creating new documents, (2) Modifying or editing content, (3) Working with tracked changes, (4) Adding comments, or any other document tasks",
     "risk": "unknown",
     "source": "unknown"
+  },
+  {
+    "id": "domain-driven-design",
+    "path": "skills/domain-driven-design",
+    "category": "uncategorized",
+    "name": "domain-driven-design",
+    "description": "Plan and route Domain-Driven Design work from strategic modeling to tactical implementation and evented architecture patterns.",
+    "risk": "safe",
+    "source": "self"
   },
   {
     "id": "dotnet-architect",
@@ -3924,6 +3996,15 @@
     "source": "https://github.com/playwright-community/playwright-go"
   },
   {
+    "id": "go-rod-master",
+    "path": "skills/go-rod-master",
+    "category": "uncategorized",
+    "name": "go-rod-master",
+    "description": "Comprehensive guide for browser automation and web scraping with go-rod (Chrome DevTools Protocol) including stealth anti-bot-detection patterns.",
+    "risk": "safe",
+    "source": "https://github.com/go-rod/rod"
+  },
+  {
     "id": "godot-gdscript-patterns",
     "path": "skills/godot-gdscript-patterns",
     "category": "uncategorized",
@@ -4417,6 +4498,24 @@
     "description": "Expert in LangGraph - the production-grade framework for building stateful, multi-actor AI applications. Covers graph construction, state management, cycles and branches, persistence with checkpointers, human-in-the-loop patterns, and the ReAct agent pattern. Used in production at LinkedIn, Uber, and 400+ companies. This is LangChain's recommended approach for building agents. Use when: langgraph, langchain agent, stateful agent, agent graph, react agent.",
     "risk": "unknown",
     "source": "vibeship-spawner-skills (Apache 2.0)"
+  },
+  {
+    "id": "laravel-expert",
+    "path": "skills/laravel-expert",
+    "category": "uncategorized",
+    "name": "laravel-expert",
+    "description": "Senior Laravel Engineer role for production-grade, maintainable, and idiomatic Laravel solutions. Focuses on clean architecture, security, performance, and modern standards (Laravel 10/11+).",
+    "risk": "safe",
+    "source": "community"
+  },
+  {
+    "id": "laravel-security-audit",
+    "path": "skills/laravel-security-audit",
+    "category": "uncategorized",
+    "name": "laravel-security-audit",
+    "description": "Security auditor for Laravel applications. Analyzes code for vulnerabilities, misconfigurations, and insecure practices using OWASP standards and Laravel security best practices.",
+    "risk": "safe",
+    "source": "community"
   },
   {
     "id": "last30days",
@@ -5756,6 +5855,15 @@
     "category": "uncategorized",
     "name": "rag-implementation",
     "description": "Build Retrieval-Augmented Generation (RAG) systems for LLM applications with vector databases and semantic search. Use when implementing knowledge-grounded AI, building document Q&A systems, or integrating LLMs with external knowledge bases.",
+    "risk": "unknown",
+    "source": "unknown"
+  },
+  {
+    "id": "react-flow-architect",
+    "path": "skills/react-flow-architect",
+    "category": "uncategorized",
+    "name": "react-flow-architect",
+    "description": "Expert ReactFlow architect for building interactive graph applications with hierarchical node-edge systems, performance optimization, and auto-layout integration. Use when Claude needs to create or optimize ReactFlow applications for: (1) Interactive process graphs with expand/collapse navigation, (2) Hierarchical tree structures with drag & drop, (3) Performance-optimized large datasets with incremental rendering, (4) Auto-layout integration with Dagre, (5) Complex state management for nodes and edges, or any advanced ReactFlow visualization requirements.",
     "risk": "unknown",
     "source": "unknown"
   },
