@@ -2,9 +2,9 @@
 
 Generated at: 2026-02-08T00:00:00.000Z
 
-Total skills: 868
+Total skills: 882
 
-## architecture (68)
+## architecture (73)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -46,6 +46,11 @@ Total skills: 868
 | `game-development/multiplayer` | Multiplayer game development principles. Architecture, networking, synchronization. | game, development/multiplayer | game, development/multiplayer, multiplayer, development, principles, architecture, networking, synchronization |
 | `godot-gdscript-patterns` | Master Godot 4 GDScript patterns including signals, scenes, state machines, and optimization. Use when building Godot games, implementing game systems, or le... | godot, gdscript | godot, gdscript, including, signals, scenes, state, machines, optimization, building, games, implementing, game |
 | `haskell-pro` | Expert Haskell engineer specializing in advanced type systems, pure functional design, and high-reliability software. Use PROACTIVELY for type-level programm... | haskell | haskell, pro, engineer, specializing, type, pure, functional, high, reliability, software, proactively, level |
+| `hig-components-dialogs` | Apple HIG guidance for presentation components including alerts, action sheets, popovers, sheets, and digit entry views. Use this skill when the user says "s... | hig, components, dialogs | hig, components, dialogs, apple, guidance, presentation, including, alerts, action, sheets, popovers, digit |
+| `hig-components-layout` | Apple Human Interface Guidelines for layout and navigation components. Use this skill when the user asks about "sidebar", "split view", "tab bar", "tab view"... | hig, components, layout | hig, components, layout, apple, human, interface, guidelines, navigation, skill, user, asks, about |
+| `hig-components-search` | Apple HIG guidance for navigation-related components including search fields, page controls, and path controls. Use this skill when the user says "how should... | hig, components, search | hig, components, search, apple, guidance, navigation, related, including, fields, page, controls, path |
+| `hig-components-system` | Apple HIG guidance for system experience components: widgets, live activities, notifications, complications, home screen quick actions, top shelf, watch face... | hig, components | hig, components, apple, guidance, experience, widgets, live, activities, notifications, complications, home, screen |
+| `hig-inputs` | Apple HIG guidance for input methods and interaction patterns: gestures, Apple Pencil, keyboards, game controllers, pointers, Digital Crown, eye tracking, fo... | hig, inputs | hig, inputs, apple, guidance, input, methods, interaction, gestures, pencil, keyboards, game, controllers |
 | `i18n-localization` | Internationalization and localization patterns. Detecting hardcoded strings, managing translations, locale files, RTL support. | i18n, localization | i18n, localization, internationalization, detecting, hardcoded, strings, managing, translations, locale, files, rtl |
 | `inngest` | Inngest expert for serverless-first background jobs, event-driven workflows, and durable execution without managing queues or workers. Use when: inngest, ser... | inngest | inngest, serverless, first, background, jobs, event, driven, durable, execution, without, managing, queues |
 | `julia-pro` | Master Julia 1.10+ with modern features, performance optimization, multiple dispatch, and production-ready practices. Expert in the Julia ecosystem including... | julia | julia, pro, 10, features, performance, optimization, multiple, dispatch, ecosystem, including, package, scientific |
@@ -120,7 +125,7 @@ Total skills: 868
 | `team-composition-analysis` | This skill should be used when the user asks to "plan team structure", "determine hiring needs", "design org chart", "calculate compensation", "plan equity a... | team, composition | team, composition, analysis, skill, should, used, user, asks, plan, structure, determine, hiring |
 | `whatsapp-automation` | Automate WhatsApp Business tasks via Rube MCP (Composio): send messages, manage templates, upload media, and handle contacts. Always search tools first for c... | whatsapp | whatsapp, automation, automate, business, tasks, via, rube, mcp, composio, send, messages, upload |
 
-## data-ai (159)
+## data-ai (162)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -247,6 +252,9 @@ Triggers: "data lake", "Da... | azure, storage, file, datalake, py | azure, stor
 | `google-analytics-automation` | Automate Google Analytics tasks via Rube MCP (Composio): run reports, list accounts/properties, funnels, pivots, key events. Always search tools first for cu... | google, analytics | google, analytics, automation, automate, tasks, via, rube, mcp, composio, run, reports, list |
 | `googlesheets-automation` | Automate Google Sheets operations (read, write, format, filter, manage spreadsheets) via Rube MCP (Composio). Read/write data, manage tabs, apply formatting,... | googlesheets | googlesheets, automation, automate, google, sheets, operations, read, write, format, filter, spreadsheets, via |
 | `graphql` | GraphQL gives clients exactly the data they need - no more, no less. One endpoint, typed schema, introspection. But the flexibility that makes it powerful al... | graphql | graphql, gives, clients, exactly, data, no, less, one, endpoint, typed, schema, introspection |
+| `hig-components-content` | Apple Human Interface Guidelines for content display components. Use this skill when the user asks about "charts component", "collection view", "image view",... | hig, components, content | hig, components, content, apple, human, interface, guidelines, display, skill, user, asks, about |
+| `hig-components-status` | Apple HIG guidance for status and progress UI components including progress indicators, status bars, and activity rings. Use this skill when asked about: "pr... | hig, components, status | hig, components, status, apple, guidance, progress, ui, including, indicators, bars, activity, rings |
+| `hig-patterns` | Apple Human Interface Guidelines interaction and UX patterns. Use this skill when the user asks about "onboarding flow", "user onboarding", "app launch", "lo... | hig | hig, apple, human, interface, guidelines, interaction, ux, skill, user, asks, about, onboarding |
 | `hosted-agents-v2-py` | Build hosted agents using Azure AI Projects SDK with ImageBasedHostedAgentDefinition.
 Use when creating container-based agents that run custom code in Azure ... | hosted, agents, v2, py | hosted, agents, v2, py, azure, ai, sdk, imagebasedhostedagentdefinition, creating, container, run, custom |
 | `hybrid-search-implementation` | Combine vector and keyword search for improved retrieval. Use when implementing RAG systems, building search engines, or when neither approach alone provides... | hybrid, search | hybrid, search, combine, vector, keyword, improved, retrieval, implementing, rag, building, engines, neither |
@@ -304,7 +312,7 @@ Use when creating container-based agents that run custom code in Azure ... | hos
 | `xlsx-official` | Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work ... | xlsx, official | xlsx, official, spreadsheet, creation, editing, analysis, formulas, formatting, data, visualization, claude, work |
 | `youtube-automation` | Automate YouTube tasks via Rube MCP (Composio): upload videos, manage playlists, search content, get analytics, and handle comments. Always search tools firs... | youtube | youtube, automation, automate, tasks, via, rube, mcp, composio, upload, videos, playlists, search |
 
-## development (132)
+## development (133)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -401,6 +409,7 @@ Triggers: "queue storage", "QueueServic... | azure, storage, queue, py | azure, 
 | `go-playwright` | Expert capability for robust, stealthy, and efficient browser automation using Playwright Go. | go, playwright | go, playwright, capability, robust, stealthy, efficient, browser, automation |
 | `go-rod-master` | Comprehensive guide for browser automation and web scraping with go-rod (Chrome DevTools Protocol) including stealth anti-bot-detection patterns. | go, rod, master | go, rod, master, browser, automation, web, scraping, chrome, devtools, protocol, including, stealth |
 | `golang-pro` | Master Go 1.21+ with modern patterns, advanced concurrency, performance optimization, and production-ready microservices. Expert in the latest Go ecosystem i... | golang | golang, pro, go, 21, concurrency, performance, optimization, microservices, latest, ecosystem, including, generics |
+| `hig-platforms` | Apple Human Interface Guidelines for platform-specific design. Use this skill when the user asks about "designing for iOS", "iPad app design", "macOS design"... | hig, platforms | hig, platforms, apple, human, interface, guidelines, platform, specific, skill, user, asks, about |
 | `hubspot-integration` | Expert patterns for HubSpot CRM integration including OAuth authentication, CRM objects, associations, batch operations, webhooks, and custom objects. Covers... | hubspot, integration | hubspot, integration, crm, including, oauth, authentication, objects, associations, batch, operations, webhooks, custom |
 | `javascript-mastery` | Comprehensive JavaScript reference covering 33+ essential concepts every developer should know. From fundamentals like primitives and closures to advanced pa... | javascript, mastery | javascript, mastery, reference, covering, 33, essential, concepts, every, developer, should, know, fundamentals |
 | `javascript-pro` | Master modern JavaScript with ES6+, async patterns, and Node.js APIs. Handles promises, event loops, and browser/Node compatibility. Use PROACTIVELY for Java... | javascript | javascript, pro, es6, async, node, js, apis, promises, event, loops, browser, compatibility |
@@ -459,7 +468,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `webapp-testing` | Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing... | webapp | webapp, testing, toolkit, interacting, local, web, applications, playwright, supports, verifying, frontend, functionality |
 | `zustand-store-ts` | Create Zustand stores with TypeScript, subscribeWithSelector middleware, and proper state/action separation. Use when building React state management, creati... | zustand, store, ts | zustand, store, ts, stores, typescript, subscribewithselector, middleware, proper, state, action, separation, building |
 
-## general (135)
+## general (138)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -538,6 +547,9 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `git-pr-workflows-onboard` | You are an **expert onboarding specialist and knowledge transfer architect** with deep experience in remote-first organizations, technical team integration, ... | git, pr, onboard | git, pr, onboard, onboarding, knowledge, transfer, architect, deep, experience, remote, first, organizations |
 | `git-pr-workflows-pr-enhance` | You are a PR optimization expert specializing in creating high-quality pull requests that facilitate efficient code reviews. Generate comprehensive PR descri... | git, pr, enhance | git, pr, enhance, optimization, specializing, creating, high, quality, pull, requests, facilitate, efficient |
 | `github-issue-creator` | Convert raw notes, error logs, voice dictation, or screenshots into crisp GitHub-flavored markdown issue reports. Use when the user pastes bug info, error me... | github, issue, creator | github, issue, creator, convert, raw, notes, error, logs, voice, dictation, screenshots, crisp |
+| `hig-components-controls` | Apple HIG guidance for selection and input controls including pickers, toggles, sliders, steppers, segmented controls, combo boxes, text fields, text views, ... | hig, components, controls | hig, components, controls, apple, guidance, selection, input, including, pickers, toggles, sliders, steppers |
+| `hig-components-menus` | Apple HIG guidance for menu and button components including menus, context menus, dock menus, edit menus, the menu bar, toolbars, action buttons, pop-up butt... | hig, components, menus | hig, components, menus, apple, guidance, menu, button, including, context, dock, edit, bar |
+| `hig-project-context` | Create or update a shared Apple design context document that other HIG skills use to tailor guidance. Use when the user says "set up my project context," "wh... | hig | hig, context, update, shared, apple, document, other, skills, tailor, guidance, user, says |
 | `imagen` |  | imagen | imagen |
 | `infinite-gratitude` | Multi-agent research skill for parallel research execution (10 agents, battle-tested with real case studies). | infinite, gratitude | infinite, gratitude, multi, agent, research, skill, parallel, execution, 10, agents, battle, tested |
 | `interactive-portfolio` | Expert in building portfolios that actually land jobs and clients - not just showing work, but creating memorable experiences. Covers developer portfolios, d... | interactive, portfolio | interactive, portfolio, building, portfolios, actually, land, jobs, clients, just, showing, work, creating |
@@ -599,7 +611,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `x-article-publisher-skill` | Publish articles to X/Twitter | x, article, publisher, skill | x, article, publisher, skill, publish, articles, twitter |
 | `youtube-summarizer` | Extract transcripts from YouTube videos and generate comprehensive, detailed summaries using intelligent analysis frameworks | video, summarization, transcription, youtube, content-analysis | video, summarization, transcription, youtube, content-analysis, summarizer, extract, transcripts, videos, generate, detailed, summaries |
 
-## infrastructure (102)
+## infrastructure (103)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -674,6 +686,7 @@ Triggers: "azure-storage-file-share", "Share... | azure, storage, file, share, p
 | `gitops-workflow` | Implement GitOps workflows with ArgoCD and Flux for automated, declarative Kubernetes deployments with continuous reconciliation. Use when implementing GitOp... | gitops | gitops, argocd, flux, automated, declarative, kubernetes, deployments, continuous, reconciliation, implementing, automating, setting |
 | `grafana-dashboards` | Create and manage production Grafana dashboards for real-time visualization of system and application metrics. Use when building monitoring dashboards, visua... | grafana, dashboards | grafana, dashboards, real, time, visualization, application, metrics, building, monitoring, visualizing, creating, operational |
 | `helm-chart-scaffolding` | Design, organize, and manage Helm charts for templating and packaging Kubernetes applications with reusable configurations. Use when creating Helm charts, pa... | helm, chart | helm, chart, scaffolding, organize, charts, templating, packaging, kubernetes, applications, reusable, configurations, creating |
+| `hig-technologies` | Apple HIG guidance for Apple technology integrations: Siri, Apple Pay, HealthKit, HomeKit, ARKit, machine learning, generative AI, iCloud, Sign in with Apple... | hig, technologies | hig, technologies, apple, guidance, technology, integrations, siri, pay, healthkit, homekit, arkit, machine |
 | `hugging-face-cli` | Execute Hugging Face Hub operations using the `hf` CLI. Use when the user needs to download models/datasets/spaces, upload files to Hub repositories, create ... | hugging, face, cli | hugging, face, cli, execute, hub, operations, hf, user, download, models, datasets, spaces |
 | `hybrid-cloud-networking` | Configure secure, high-performance connectivity between on-premises infrastructure and cloud platforms using VPN and dedicated connections. Use when building... | hybrid, cloud, networking | hybrid, cloud, networking, configure, secure, high, performance, connectivity, between, premises, infrastructure, platforms |
 | `istio-traffic-management` | Configure Istio traffic management including routing, load balancing, circuit breakers, and canary deployments. Use when implementing service mesh traffic po... | istio, traffic | istio, traffic, configure, including, routing, load, balancing, circuit, breakers, canary, deployments, implementing |
@@ -713,7 +726,7 @@ Triggers: "azure-storage-file-share", "Share... | azure, storage, file, share, p
 | `wireshark-analysis` | This skill should be used when the user asks to "analyze network traffic with Wireshark", "capture packets for troubleshooting", "filter PCAP files", "follow... | wireshark | wireshark, network, traffic, analysis, skill, should, used, user, asks, analyze, capture, packets |
 | `workflow-automation` | Workflow automation is the infrastructure that makes AI agents reliable. Without durable execution, a network hiccup during a 10-step payment flow means lost... |  | automation, infrastructure, makes, ai, agents, reliable, without, durable, execution, network, hiccup, during |
 
-## security (129)
+## security (130)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -771,6 +784,7 @@ Triggers: "keyvault secrets rust", "SecretClient rust"... | azure, keyvault, sec
 | `frontend-security-coder` | Expert in secure frontend coding practices specializing in XSS prevention, output sanitization, and client-side security patterns. Use PROACTIVELY for fronte... | frontend, security, coder | frontend, security, coder, secure, coding, specializing, xss, prevention, output, sanitization, client, side |
 | `gdpr-data-handling` | Implement GDPR-compliant data handling with consent management, data subject rights, and privacy by design. Use when building systems that process EU persona... | gdpr, data, handling | gdpr, data, handling, compliant, consent, subject, rights, privacy, building, process, eu, personal |
 | `graphql-architect` | Master modern GraphQL with federation, performance optimization, and enterprise security. Build scalable schemas, implement advanced caching, and design real... | graphql | graphql, architect, federation, performance, optimization, enterprise, security, scalable, schemas, caching, real, time |
+| `hig-foundations` | Apple Human Interface Guidelines design foundations. Use this skill when the user asks about "HIG color", "Apple typography", "SF Symbols", "dark mode guidel... | hig, foundations | hig, foundations, apple, human, interface, guidelines, skill, user, asks, about, color, typography |
 | `html-injection-testing` | This skill should be used when the user asks to "test for HTML injection", "inject HTML into web pages", "perform HTML injection attacks", "deface web applic... | html, injection | html, injection, testing, skill, should, used, user, asks, test, inject, web, pages |
 | `hugging-face-jobs` | This skill should be used when users want to run any workload on Hugging Face Jobs infrastructure. Covers UV scripts, Docker-based jobs, hardware selection, ... | hugging, face, jobs | hugging, face, jobs, skill, should, used, users, want, run, any, workload, infrastructure |
 | `hybrid-cloud-architect` | Expert hybrid cloud architect specializing in complex multi-cloud solutions across AWS/Azure/GCP and private clouds (OpenStack/VMware). Masters hybrid connec... | hybrid, cloud | hybrid, cloud, architect, specializing, complex, multi, solutions, aws, azure, gcp, private, clouds |

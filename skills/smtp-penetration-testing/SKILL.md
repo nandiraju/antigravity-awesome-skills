@@ -1,6 +1,6 @@
 ---
-name: SMTP Penetration Testing
-description: This skill should be used when the user asks to "perform SMTP penetration testing", "enumerate email users", "test for open mail relays", "grab SMTP banners", "brute force email credentials", or "assess mail server security". It provides comprehensive techniques for testing SMTP server security.
+name: smtp-penetration-testing
+description: "This skill should be used when the user asks to "perform SMTP penetration testing", "enumerate email users", "test for open mail relays", "grab SMTP banners", "brute force email credentials", or "a..."
 metadata:
   author: zebbern
   version: "1.1"

@@ -68,10 +68,14 @@ def validate_skills(skills_dir, strict_mode=False):
             if "name" not in metadata:
                 errors.append(f"❌ {rel_path}: Missing 'name' in frontmatter")
             elif metadata["name"] != os.path.basename(root):
-                warnings.append(f"⚠️  {rel_path}: Name '{metadata['name']}' does not match folder name '{os.path.basename(root)}'")
+                errors.append(f"❌ {rel_path}: Name '{metadata['name']}' does not match folder name '{os.path.basename(root)}'")
 
             if "description" not in metadata:
                 errors.append(f"❌ {rel_path}: Missing 'description' in frontmatter")
+            else:
+                # agentskills-ref checks for short descriptions
+                if len(metadata["description"]) > 200:
+                    errors.append(f"❌ {rel_path}: Description is oversized ({len(metadata['description'])} chars). Must be concise.")
 
             # Risk Validation (Quality Bar)
             if "risk" not in metadata:

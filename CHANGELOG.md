@@ -7,6 +7,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [5.9.0] - 2026-02-20 - "Apple HIG & Quality Bar"
+
+> **Extensive Apple design guidelines and strict validation for the entire registry.**
+
+This release adds the official Apple Human Interface Guidelines skills suite, and enforces strict agentskills-ref metadata validation across all 882+ skills.
+
+### 🚀 New Skills
+
+- **Apple HIG Skills Suite** (14 skills): Comprehensive platform and UX guidelines for iOS, macOS, visionOS, watchOS, and tvOS. Pattern, components, and layout references.
+
+### 📦 Improvements
+
+- **Quality Bar Enforcement**: Integrated strict validation rules. The entire registry (896 skills) has been audited and retrofitted to enforce strict folder-to-name matching and concise (<200 char) descriptions.
+- **Contributor Documentation**: Updated `CONTRIBUTING.md` with explicit rules for the 5-Point Quality Check based on agentskills-ref.
+
+### 👥 Credits
+
+A huge shoutout to our community contributors:
+
+- **@raintree-technology** for the Apple HIG Skills (Issue #90)
+- **@sergeyklay** for the skill quality validations (Issue #97)
+
+---
+
 ## [5.8.0] - 2026-02-19 - "Domain-Driven Design Suite"
 
 > **First full DDD skill suite: strategic design, context mapping, and tactical patterns for complex domains.**
