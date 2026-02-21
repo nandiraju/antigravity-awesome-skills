@@ -55,11 +55,11 @@ This repository provides essential skills to transform your AI assistant into a 
 
 ## New Here? Start Here!
 
-**Welcome to the V5.9.0 Workflows Edition.** This isn't just a list of scripts; it's a complete operating system for your AI Agent.
+**Welcome to the V5.10.0 Workflows Edition.** This isn't just a list of scripts; it's a complete operating system for your AI Agent.
 
 ### 1. 🐣 Context: What is this?
 
-**Antigravity Awesome Skills** (Release 5.9.0) is a massive upgrade to your AI's capabilities.
+**Antigravity Awesome Skills** (Release 5.10.0) is a massive upgrade to your AI's capabilities.
 
 AI Agents (like Claude Code, Cursor, or Gemini) are smart, but they lack **specific tools**. They don't know your company's "Deployment Protocol" or the specific syntax for "AWS CloudFormation".
 **Skills** are small markdown files that teach them how to do these specific tasks perfectly, every time.
@@ -107,17 +107,17 @@ Once installed, just ask your agent naturally:
 
 These skills follow the universal **SKILL.md** format and work with any AI coding assistant that supports agentic skills.
 
-| Tool            | Type | Invocation Example                | Path              |
-| :-------------- | :--- | :-------------------------------- | :---------------- |
-| **Claude Code** | CLI  | `>> /skill-name help me...`       | `.claude/skills/` |
-| **Gemini CLI**  | CLI  | `(User Prompt) Use skill-name...` | `.gemini/skills/` |
-| **Codex CLI**   | CLI  | `(User Prompt) Use skill-name...` | `.codex/skills/`  |
-| **Kiro CLI**    | CLI  | `(User Prompt) Use skill-name...` | `.kiro/skills/`   |
+| Tool            | Type | Invocation Example                | Path                                                                  |
+| :-------------- | :--- | :-------------------------------- | :-------------------------------------------------------------------- |
+| **Claude Code** | CLI  | `>> /skill-name help me...`       | `.claude/skills/`                                                     |
+| **Gemini CLI**  | CLI  | `(User Prompt) Use skill-name...` | `.gemini/skills/`                                                     |
+| **Codex CLI**   | CLI  | `(User Prompt) Use skill-name...` | `.codex/skills/`                                                      |
+| **Kiro CLI**    | CLI  | `(User Prompt) Use skill-name...` | `.kiro/skills/`                                                       |
 | **Antigravity** | IDE  | `(Agent Mode) Use skill...`       | Global: `~/.gemini/antigravity/skills/` · Workspace: `.agent/skills/` |
-| **Cursor**      | IDE  | `@skill-name (in Chat)`           | `.cursor/skills/` |
-| **Copilot**     | Ext  | `(Paste content manually)`        | N/A               |
-| **OpenCode**    | CLI  | `opencode run @skill-name`        | `.agents/skills/`  |
-| **AdaL CLI**    | CLI  | `(Auto) Skills load on-demand`    | `.adal/skills/`   |
+| **Cursor**      | IDE  | `@skill-name (in Chat)`           | `.cursor/skills/`                                                     |
+| **Copilot**     | Ext  | `(Paste content manually)`        | N/A                                                                   |
+| **OpenCode**    | CLI  | `opencode run @skill-name`        | `.agents/skills/`                                                     |
+| **AdaL CLI**    | CLI  | `(Auto) Skills load on-demand`    | `.adal/skills/`                                                       |
 
 > [!TIP]
 > **Default installer path**: `~/.gemini/antigravity/skills` (Antigravity global). Use `--path ~/.agent/skills` for workspace-specific install. For manual clone, `.agent/skills/` works as workspace path for Antigravity.
@@ -255,11 +255,13 @@ They help you avoid picking from 883+ skills one by one.
 **Answer: NO!** Here's what bundles actually are:
 
 **What bundles ARE:**
+
 - ✅ Recommended skill lists organized by role
 - ✅ Curated starting points to help you decide what to use
 - ✅ Time-saving shortcuts for discovering relevant skills
 
 **What bundles are NOT:**
+
 - ❌ Separate installations or downloads
 - ❌ Different git commands
 - ❌ Something you need to "activate"
