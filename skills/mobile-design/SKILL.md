@@ -2,6 +2,8 @@
 name: mobile-design
 description: "Mobile-first design and engineering doctrine for iOS and Android apps. Covers touch interaction, performance, platform conventions, offline behavior, and mobile-specific decision-making. Teaches pr..."
 allowed-tools: Read, Glob, Grep, Bash
+risk: unknown
+source: community
 ---
 # Mobile Design System
 
@@ -282,3 +284,6 @@ No debate without justification.
 > **Design for that reality, or your app will fail quietly.**
 
 ---
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

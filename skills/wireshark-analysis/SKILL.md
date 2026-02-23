@@ -1,9 +1,11 @@
 ---
 name: wireshark-analysis
-description: "This skill should be used when the user asks to "analyze network traffic with Wireshark", "capture packets for troubleshooting", "filter PCAP files", "follow TCP/UDP streams", "detect network anoma..."
+description: "This skill should be used when the user asks to \"analyze network traffic with Wireshark\", \"capture packets for troubleshooting\", \"filter PCAP files\", \"follow TCP/UDP streams\", \"dete..."
 metadata:
   author: zebbern
   version: "1.1"
+risk: unknown
+source: community
 ---
 
 # Wireshark Network Traffic Analysis
@@ -495,3 +497,6 @@ File > Export Packet Dissections   # Export as text/CSV
 - Configure at Edit > Preferences > Protocols > TLS
 - For ephemeral keys, capture pre-master secret from browser
 - Some modern ciphers cannot be decrypted passively
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

@@ -2,6 +2,7 @@
 name: notion-template-business
 description: "Expert in building and selling Notion templates as a business - not just making templates, but building a sustainable digital product business. Covers template design, pricing, marketplaces, market..."
 source: vibeship-spawner-skills (Apache 2.0)
+risk: unknown
 ---
 
 # Notion Template Business
@@ -214,3 +215,6 @@ Email/chat for premium.
 ## Related Skills
 
 Works well with: `micro-saas-launcher`, `copywriting`, `landing-page-design`, `seo`
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

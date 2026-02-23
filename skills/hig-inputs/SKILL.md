@@ -1,7 +1,7 @@
 ---
 name: hig-inputs
 version: 1.0.0
-description: >
+description: ">"
   Apple HIG guidance for input methods and interaction patterns: gestures, Apple Pencil,
   keyboards, game controllers, pointers, Digital Crown, eye tracking, focus system,
   remotes, spatial interactions, gyroscope, accelerometer, and nearby interactions.
@@ -13,6 +13,8 @@ description: >
   support Apple Pencil," or asks about input device handling.
   Cross-references: hig-components-status, hig-components-system,
   hig-technologies for VoiceOver and Siri.
+risk: unknown
+source: community
 ---
 
 # Apple HIG: Inputs
@@ -114,3 +116,6 @@ Check for `.claude/apple-design-context.md` before asking questions. Use existin
 ---
 
 *Built by [Raintree Technology](https://raintree.technology) · [More developer tools](https://raintree.technology)*
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

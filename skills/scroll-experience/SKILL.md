@@ -2,6 +2,7 @@
 name: scroll-experience
 description: "Expert in building immersive scroll-driven experiences - parallax storytelling, scroll animations, interactive narratives, and cinematic web experiences. Like NY Times interactives, Apple product p..."
 source: vibeship-spawner-skills (Apache 2.0)
+risk: unknown
 ---
 
 # Scroll Experience
@@ -261,3 +262,6 @@ Graceful degradation.
 ## Related Skills
 
 Works well with: `3d-web-experience`, `frontend`, `ui-design`, `landing-page-design`
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

@@ -2,6 +2,7 @@
 name: voice-agents
 description: "Voice agents represent the frontier of AI interaction - humans speaking naturally with AI systems. The challenge isn't just speech recognition and synthesis, it's achieving natural conversation flo..."
 source: vibeship-spawner-skills (Apache 2.0)
+risk: unknown
 ---
 
 # Voice Agents
@@ -66,3 +67,6 @@ Detect when user starts/stops speaking
 ## Related Skills
 
 Works well with: `agent-tool-builder`, `multi-agent-orchestration`, `llm-architect`, `backend`
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

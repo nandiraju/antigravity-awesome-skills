@@ -1,7 +1,7 @@
 ---
 name: hig-components-dialogs
 version: 1.0.0
-description: >-
+description: ">-"
   Apple HIG guidance for presentation components including alerts, action sheets,
   popovers, sheets, and digit entry views. Use this skill when the user says
   "should I use an alert or a sheet," "how do I show a confirmation dialog,"
@@ -11,6 +11,8 @@ description: >-
   destructive action confirmation, or overlay UI patterns. Cross-references:
   hig-components-menus, hig-components-controls, hig-components-search,
   hig-patterns.
+risk: unknown
+source: community
 ---
 
 # Apple HIG: Presentation Components
@@ -74,3 +76,6 @@ Check for `.claude/apple-design-context.md` before asking questions. Use existin
 ---
 
 *Built by [Raintree Technology](https://raintree.technology) · [More developer tools](https://raintree.technology)*
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

@@ -2,6 +2,7 @@
 name: browser-automation
 description: "Browser automation powers web testing, scraping, and AI agent interactions. The difference between a flaky script and a reliable system comes down to understanding selectors, waiting strategies, an..."
 source: vibeship-spawner-skills (Apache 2.0)
+risk: unknown
 ---
 
 # Browser Automation
@@ -68,3 +69,6 @@ Let Playwright wait automatically, never add manual waits
 ## Related Skills
 
 Works well with: `agent-tool-builder`, `workflow-automation`, `computer-use-agents`, `test-architect`
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

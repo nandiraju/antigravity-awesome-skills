@@ -1,6 +1,8 @@
 ---
 name: paid-ads
 description: "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user mentions 'PPC,' 'paid media,' '..."
+risk: unknown
+source: community
 ---
 
 # Paid Ads
@@ -549,3 +551,6 @@ If you need more context:
 - **analytics-tracking**: For proper conversion tracking setup
 - **ab-test-setup**: For landing page testing to improve ROAS
 - **page-cro**: For optimizing post-click conversion rates
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

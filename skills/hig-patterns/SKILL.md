@@ -1,7 +1,7 @@
 ---
 name: hig-patterns
 version: 1.0.0
-description: >
+description: ">"
   Apple Human Interface Guidelines interaction and UX patterns. Use this skill when the user asks about
   "onboarding flow", "user onboarding", "app launch", "loading state", "drag and drop", "search pattern",
   "settings design", "notifications", "modality", "multitasking", "feedback pattern", "haptics",
@@ -12,6 +12,8 @@ description: >
   "how to show progress", or "what's the right way to confirm a delete".
   Cross-references: hig-foundations for underlying principles, hig-platforms for platform specifics,
   hig-components-layout for navigation, hig-components-content for data display.
+risk: unknown
+source: community
 ---
 
 # Apple HIG: Interaction Patterns
@@ -102,3 +104,6 @@ Check for `.claude/apple-design-context.md` before asking questions. Use existin
 ---
 
 *Built by [Raintree Technology](https://raintree.technology) · [More developer tools](https://raintree.technology)*
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

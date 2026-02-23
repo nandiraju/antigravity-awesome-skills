@@ -2,6 +2,8 @@
 name: docx-official
 description: "Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. When Claude needs to work with professional document..."
 license: Proprietary. LICENSE.txt has complete terms
+risk: unknown
+source: community
 ---
 
 # DOCX creation, editing, and analysis
@@ -195,3 +197,6 @@ Required dependencies (install if not available):
 - **LibreOffice**: `sudo apt-get install libreoffice` (for PDF conversion)
 - **Poppler**: `sudo apt-get install poppler-utils` (for pdftoppm to convert PDF to images)
 - **defusedxml**: `pip install defusedxml` (for secure XML parsing)
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

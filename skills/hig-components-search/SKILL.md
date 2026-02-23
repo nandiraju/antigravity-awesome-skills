@@ -1,7 +1,7 @@
 ---
 name: hig-components-search
 version: 1.0.0
-description: >-
+description: ">-"
   Apple HIG guidance for navigation-related components including search fields,
   page controls, and path controls. Use this skill when the user says "how should
   search work in my app," "I need a breadcrumb," "how do I paginate content," or
@@ -10,6 +10,8 @@ description: >-
   content navigation, or file path hierarchy display. Cross-references:
   hig-components-menus, hig-components-controls, hig-components-dialogs,
   hig-patterns.
+risk: unknown
+source: community
 ---
 
 # Apple HIG: Navigation Components
@@ -66,3 +68,6 @@ Check for `.claude/apple-design-context.md` before asking questions. Use existin
 ---
 
 *Built by [Raintree Technology](https://raintree.technology) · [More developer tools](https://raintree.technology)*
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

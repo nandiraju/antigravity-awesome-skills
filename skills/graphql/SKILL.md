@@ -2,6 +2,7 @@
 name: graphql
 description: "GraphQL gives clients exactly the data they need - no more, no less. One endpoint, typed schema, introspection. But the flexibility that makes it powerful also makes it dangerous. Without proper co..."
 source: vibeship-spawner-skills (Apache 2.0)
+risk: unknown
 ---
 
 # GraphQL
@@ -66,3 +67,6 @@ Normalized cache with type policies
 ## Related Skills
 
 Works well with: `backend`, `postgres-wizard`, `nextjs-app-router`, `react-patterns`
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

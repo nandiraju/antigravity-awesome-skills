@@ -1,7 +1,7 @@
 ---
 name: hig-components-status
 version: 1.0.0
-description: >
+description: ">"
   Apple HIG guidance for status and progress UI components including progress indicators,
   status bars, and activity rings. Use this skill when asked about: "progress indicator",
   "progress bar", "loading spinner", "status bar", "activity ring", "progress display",
@@ -11,6 +11,8 @@ description: >
   Cross-references: hig-components-system for widgets and complications,
   hig-inputs for gesture-driven progress controls, hig-technologies for HealthKit
   and activity ring data integration.
+risk: unknown
+source: community
 ---
 
 # Apple HIG: Status Components
@@ -84,3 +86,6 @@ Check for `.claude/apple-design-context.md` before asking questions. Use existin
 ---
 
 *Built by [Raintree Technology](https://raintree.technology) · [More developer tools](https://raintree.technology)*
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

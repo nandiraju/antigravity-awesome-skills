@@ -1,7 +1,7 @@
 ---
 name: hig-components-menus
 version: 1.0.0
-description: >-
+description: ">-"
   Apple HIG guidance for menu and button components including menus, context menus,
   dock menus, edit menus, the menu bar, toolbars, action buttons, pop-up buttons,
   pull-down buttons, disclosure controls, and standard buttons. Use this skill
@@ -11,6 +11,8 @@ description: >-
   button, pop-up button, pull-down button, disclosure control, dock menu, edit
   menu, or any menu/button component layout and behavior. Cross-references:
   hig-components-search, hig-components-controls, hig-components-dialogs.
+risk: unknown
+source: community
 ---
 
 # Apple HIG: Menus and Buttons
@@ -79,3 +81,6 @@ Check for `.claude/apple-design-context.md` before asking questions. Use existin
 ---
 
 *Built by [Raintree Technology](https://raintree.technology) · [More developer tools](https://raintree.technology)*
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

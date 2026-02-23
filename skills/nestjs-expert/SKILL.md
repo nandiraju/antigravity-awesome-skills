@@ -4,6 +4,8 @@ description: "Nest.js framework expert specializing in module architecture, depe
 category: framework
 displayName: Nest.js Framework Expert
 color: red
+risk: unknown
+source: community
 ---
 
 # Nest.js Expert
@@ -550,3 +552,6 @@ export class ConfigModule {
 - ✅ Proper error handling implemented
 - ✅ Security best practices applied
 - ✅ Documentation updated for API changes
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

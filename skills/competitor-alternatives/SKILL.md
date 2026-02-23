@@ -1,6 +1,8 @@
 ---
 name: competitor-alternatives
 description: "When the user wants to create competitor comparison or alternative pages for SEO and sales enablement. Also use when the user mentions 'alternative page,' 'vs page,' 'competitor comparison,' 'compa..."
+risk: unknown
+source: community
 ---
 
 # Competitor & Alternative Pages
@@ -748,3 +750,6 @@ If you need more context:
 - **copywriting**: For writing compelling comparison copy
 - **seo-audit**: For optimizing competitor pages
 - **schema-markup**: For FAQ and comparison schema
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

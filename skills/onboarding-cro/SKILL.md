@@ -1,6 +1,8 @@
 ---
 name: onboarding-cro
-description: "When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flow," "activation rate," "user activati..."
+description: "When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions \"onboarding flow,\" \"activation rate,\" \"u..."
+risk: unknown
+source: community
 ---
 
 # Onboarding CRO
@@ -431,3 +433,6 @@ If you need more context:
 - **email-sequence**: For onboarding email series
 - **paywall-upgrade-cro**: For converting to paid during/after onboarding
 - **ab-test-setup**: For testing onboarding changes
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

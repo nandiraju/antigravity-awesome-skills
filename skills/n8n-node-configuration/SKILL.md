@@ -768,8 +768,8 @@ get_node({
 
 For comprehensive guides on specific topics:
 
-- **[DEPENDENCIES.md](DEPENDENCIES.md)** - Deep dive into property dependencies and displayOptions
-- **[OPERATION_PATTERNS.md](OPERATION_PATTERNS.md)** - Common configuration patterns by node type
+- **DEPENDENCIES.md** - Deep dive into property dependencies and displayOptions
+- **OPERATION_PATTERNS.md** - Common configuration patterns by node type
 
 ---
 

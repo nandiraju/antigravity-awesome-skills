@@ -1,6 +1,8 @@
 ---
 name: loki-mode
-description: "Multi-agent autonomous startup system for Claude Code. Triggers on "Loki Mode". Orchestrates 100+ specialized agents across engineering, QA, DevOps, security, data/ML, business operations, marketin..."
+description: "Multi-agent autonomous startup system for Claude Code. Triggers on \"Loki Mode\". Orchestrates 100+ specialized agents across engineering, QA, DevOps, security, data/ML, business operations,..."
+risk: unknown
+source: community
 ---
 
 # Loki Mode - Multi-Agent Autonomous Startup System
@@ -719,3 +721,6 @@ Detailed documentation is split into reference files for progressive loading:
 ---
 
 **Version:** 2.32.0 | **Lines:** ~600 | **Research-Enhanced: Labs + HN Production Patterns**
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

@@ -2,6 +2,8 @@
 name: xlsx-official
 description: "Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work with spreadsheets (.xlsx, .xlsm, .csv, ...."
 license: Proprietary. LICENSE.txt has complete terms
+risk: unknown
+source: community
 ---
 
 # Requirements for Outputs
@@ -287,3 +289,6 @@ The script returns JSON with error details:
 - Add comments to cells with complex formulas or important assumptions
 - Document data sources for hardcoded values
 - Include notes for key calculations and model sections
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

@@ -85,9 +85,9 @@ node scripts/openapi-explore.mjs --spec platform schema WebhookDelivery
 
 ## References
 
-- [references/message-debugging-reference.md](references/message-debugging-reference.md) - Message debugging guide
-- [references/triage-reference.md](references/triage-reference.md) - Error triage guide
-- [references/health-reference.md](references/health-reference.md) - Health check guide
+- references/message-debugging-reference.md - Message debugging guide
+- references/triage-reference.md - Error triage guide
+- references/health-reference.md - Health check guide
 
 ## Related skills
 

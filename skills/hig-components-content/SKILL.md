@@ -1,7 +1,7 @@
 ---
 name: hig-components-content
 version: 1.0.0
-description: >
+description: ">"
   Apple Human Interface Guidelines for content display components. Use this skill when the user asks about
   "charts component", "collection view", "image view", "web view", "color well", "image well",
   "activity view", "lockup", "data visualization", "content display", displaying images, rendering
@@ -12,6 +12,8 @@ description: >
   Cross-references: hig-foundations for color/typography/accessibility, hig-patterns for data
   visualization patterns, hig-components-layout for structural containers, hig-platforms for
   platform-specific component behavior.
+risk: unknown
+source: community
 ---
 
 # Apple HIG: Content Components
@@ -84,3 +86,6 @@ Check for `.claude/apple-design-context.md` before asking questions. Use existin
 ---
 
 *Built by [Raintree Technology](https://raintree.technology) · [More developer tools](https://raintree.technology)*
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

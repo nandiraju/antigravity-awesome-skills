@@ -2,6 +2,7 @@
 name: firebase
 description: "Firebase gives you a complete backend in minutes - auth, database, storage, functions, hosting. But the ease of setup hides real complexity. Security rules are your last line of defense, and they'r..."
 source: vibeship-spawner-skills (Apache 2.0)
+risk: unknown
 ---
 
 # Firebase
@@ -54,3 +55,6 @@ Design Firestore data structure around query patterns
 ## Related Skills
 
 Works well with: `nextjs-app-router`, `react-patterns`, `authentication-oauth`, `stripe`
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

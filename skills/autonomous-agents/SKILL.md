@@ -2,6 +2,7 @@
 name: autonomous-agents
 description: "Autonomous agents are AI systems that can independently decompose goals, plan actions, execute tools, and self-correct without constant human guidance. The challenge isn't making them capable - it'..."
 source: vibeship-spawner-skills (Apache 2.0)
+risk: unknown
 ---
 
 # Autonomous Agents
@@ -66,3 +67,6 @@ Self-evaluation and iterative improvement
 ## Related Skills
 
 Works well with: `agent-tool-builder`, `agent-memory-systems`, `multi-agent-orchestration`, `agent-evaluation`
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

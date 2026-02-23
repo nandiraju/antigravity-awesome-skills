@@ -1,7 +1,7 @@
 ---
 name: hig-foundations
 version: 1.0.0
-description: >
+description: ">"
   Apple Human Interface Guidelines design foundations. Use this skill when the user asks about
   "HIG color", "Apple typography", "SF Symbols", "dark mode guidelines", "accessible design",
   "Apple design foundations", "app icon", "layout guidelines", "materials", "motion", "privacy",
@@ -11,6 +11,8 @@ description: >
   "how do I pick system colors", or "my icons don't match the system style".
   Cross-references: hig-platforms for platform-specific guidance, hig-patterns for interaction
   patterns, hig-components-layout for structural components, hig-components-content for display.
+risk: unknown
+source: community
 ---
 
 # Apple HIG: Design Foundations
@@ -96,3 +98,6 @@ Consider how principles interact:
 ---
 
 *Built by [Raintree Technology](https://raintree.technology) · [More developer tools](https://raintree.technology)*
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

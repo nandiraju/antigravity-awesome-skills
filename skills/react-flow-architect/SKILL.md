@@ -1,6 +1,8 @@
 ---
 name: react-flow-architect
 description: "Expert ReactFlow architect for building interactive graph applications with hierarchical node-edge systems, performance optimization, and auto-layout integration. Use when Claude needs to create or..."
+risk: unknown
+source: community
 ---
 
 # ReactFlow Architect
@@ -611,3 +613,6 @@ export default function InteractiveGraph() {
 ```
 
 This comprehensive skill provides everything needed to build production-ready ReactFlow applications with hierarchical navigation, performance optimization, and advanced state management patterns.
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

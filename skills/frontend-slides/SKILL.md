@@ -768,3 +768,6 @@ class TiltEffect {
 6. User picks a style
 7. Skill generates HTML presentation with preserved assets
 8. Final presentation delivered
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

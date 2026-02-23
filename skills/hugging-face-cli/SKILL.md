@@ -194,5 +194,5 @@ hf cache rm model/gpt2           # Remove a repo from cache
 
 ## References
 
-- **Complete command reference**: See [references/commands.md](references/commands.md)
-- **Workflow examples**: See [references/examples.md](references/examples.md)
+- **Complete command reference**: See references/commands.md
+- **Workflow examples**: See references/examples.md
