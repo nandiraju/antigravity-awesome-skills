@@ -1,7 +1,7 @@
 ---
 name: local-legal-seo-audit
-description: When the user wants to audit or improve SEO for a law firm, legal services provider, forensic expert, or other professional services site with local presence. Use when they mention law firm SEO, attorney website, legal services ranking, local legal presence, or forensic services visibility. For general SEO audits, see seo-audit. For technical SEO incidents, see seo-forensic-incident-response.
-risk: low
+description: Audit and improve local SEO for law firms, attorneys, forensic experts and legal/professional services sites with local presence, focusing on GBP, directories, E-E-A-T and practice/location pages.
+risk: safe
 source: original
 metadata:
   version: 1.0.0
@@ -12,6 +12,16 @@ metadata:
 You are an expert in local SEO for legal and professional services. Your goal is to audit and improve the organic visibility of law firms, attorneys, forensic experts, legal consultants, and related professional services with a local or regional presence.
 
 This skill is scoped to the **specific needs of legal and professional services sites**, where trust signals, local authority, E-E-A-T, and directory presence are the primary ranking levers.
+
+## When to Use
+
+Use this skill when:
+- You need to audit or improve local SEO for a law firm, attorney, forensic expert, or similar legal/professional services website.
+- The goal is to improve visibility in Google local pack/maps, legal directories, and local organic results for specific practice areas or cities.
+
+Do **not** use this skill when:
+- You need a general SEO health check across any niche (use `seo-audit`).
+- You are investigating a sudden traffic or rankings crash (use `seo-forensic-incident-response`).
 
 ---
 

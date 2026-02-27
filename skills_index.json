@@ -2835,6 +2835,15 @@
     "source": "community"
   },
   {
+    "id": "convex",
+    "path": "skills/convex",
+    "category": "uncategorized",
+    "name": "convex",
+    "description": "Convex reactive backend expert: schema design, TypeScript functions, real-time subscriptions, auth, file storage, scheduling, and deployment.",
+    "risk": "safe",
+    "source": "https://docs.convex.dev"
+  },
+  {
     "id": "copilot-sdk",
     "path": "skills/copilot-sdk",
     "category": "uncategorized",
@@ -5157,6 +5166,15 @@
     "source": "community"
   },
   {
+    "id": "local-legal-seo-audit",
+    "path": "skills/local-legal-seo-audit",
+    "category": "uncategorized",
+    "name": "local-legal-seo-audit",
+    "description": "Audit and improve local SEO for law firms, attorneys, forensic experts and legal/professional services sites with local presence, focusing on GBP, directories, E-E-A-T and practice/location pages.",
+    "risk": "safe",
+    "source": "original"
+  },
+  {
     "id": "logistics-exception-management",
     "path": "skills/logistics-exception-management",
     "category": "uncategorized",
@@ -7002,6 +7020,15 @@
     "source": "community"
   },
   {
+    "id": "seo-forensic-incident-response",
+    "path": "skills/seo-forensic-incident-response",
+    "category": "uncategorized",
+    "name": "seo-forensic-incident-response",
+    "description": "Investigate sudden drops in organic traffic or rankings and run a structured forensic SEO incident response with triage, root-cause analysis and recovery plan.",
+    "risk": "safe",
+    "source": "original"
+  },
+  {
     "id": "seo-fundamentals",
     "path": "skills/seo-fundamentals",
     "category": "uncategorized",
@@ -7621,6 +7648,15 @@
     "description": "Project scaffolding templates for new applications. Use when creating new projects from scratch. Contains 12 templates for various tech stacks.",
     "risk": "unknown",
     "source": "community"
+  },
+  {
+    "id": "temporal-golang-pro",
+    "path": "skills/temporal-golang-pro",
+    "category": "uncategorized",
+    "name": "temporal-golang-pro",
+    "description": "Use when building durable distributed systems with Temporal Go SDK. Covers deterministic workflow rules, mTLS worker configs, and advanced patterns.",
+    "risk": "safe",
+    "source": "self"
   },
   {
     "id": "temporal-python-pro",

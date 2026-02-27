@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-02-08T00:00:00.000Z",
-  "total": 947,
+  "total": 951,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -7824,6 +7824,30 @@
       "path": "skills/convertkit-automation/SKILL.md"
     },
     {
+      "id": "convex",
+      "name": "convex",
+      "description": "Convex reactive backend expert: schema design, TypeScript functions, real-time subscriptions, auth, file storage, scheduling, and deployment.",
+      "category": "security",
+      "tags": [
+        "convex"
+      ],
+      "triggers": [
+        "convex",
+        "reactive",
+        "backend",
+        "schema",
+        "typescript",
+        "functions",
+        "real",
+        "time",
+        "subscriptions",
+        "auth",
+        "file",
+        "storage"
+      ],
+      "path": "skills/convex/SKILL.md"
+    },
+    {
       "id": "copilot-sdk",
       "name": "copilot-sdk",
       "description": "Build applications powered by GitHub Copilot using the Copilot SDK. Use when creating programmatic integrations with Copilot across Node.js/TypeScript, Python, Go, or .NET. Covers session managemen...",
@@ -14352,6 +14376,33 @@
       "path": "skills/llm-evaluation/SKILL.md"
     },
     {
+      "id": "local-legal-seo-audit",
+      "name": "local-legal-seo-audit",
+      "description": "Audit and improve local SEO for law firms, attorneys, forensic experts and legal/professional services sites with local presence, focusing on GBP, directories, E-E-A-T and practice/location pages.",
+      "category": "business",
+      "tags": [
+        "local",
+        "legal",
+        "seo",
+        "audit"
+      ],
+      "triggers": [
+        "local",
+        "legal",
+        "seo",
+        "audit",
+        "improve",
+        "law",
+        "firms",
+        "attorneys",
+        "forensic",
+        "experts",
+        "professional",
+        "sites"
+      ],
+      "path": "skills/local-legal-seo-audit/SKILL.md"
+    },
+    {
       "id": "logistics-exception-management",
       "name": "logistics-exception-management",
       "description": "Codified expertise for handling freight exceptions, shipment delays, damages, losses, and carrier disputes. Informed by logistics professionals with 15+ years operational experience. Includes escalation protocols, carrier-specific behaviours, claims procedures, and judgment frameworks. Use when handling shipping exceptions, freight claims, delivery issues, or carrier disputes.",
@@ -19443,6 +19494,33 @@
       "path": "skills/seo-content-writer/SKILL.md"
     },
     {
+      "id": "seo-forensic-incident-response",
+      "name": "seo-forensic-incident-response",
+      "description": "Investigate sudden drops in organic traffic or rankings and run a structured forensic SEO incident response with triage, root-cause analysis and recovery plan.",
+      "category": "security",
+      "tags": [
+        "seo",
+        "forensic",
+        "incident",
+        "response"
+      ],
+      "triggers": [
+        "seo",
+        "forensic",
+        "incident",
+        "response",
+        "investigate",
+        "sudden",
+        "drops",
+        "organic",
+        "traffic",
+        "rankings",
+        "run",
+        "structured"
+      ],
+      "path": "skills/seo-forensic-incident-response/SKILL.md"
+    },
+    {
       "id": "seo-fundamentals",
       "name": "seo-fundamentals",
       "description": "Core principles of SEO including E-E-A-T, Core Web Vitals, technical foundations, content quality, and how modern search engines evaluate pages. This skill explains *why* SEO works, not how to execute specific optimizations.",
@@ -21099,6 +21177,31 @@
         "experience"
       ],
       "path": "skills/telegram-mini-app/SKILL.md"
+    },
+    {
+      "id": "temporal-golang-pro",
+      "name": "temporal-golang-pro",
+      "description": "Use when building durable distributed systems with Temporal Go SDK. Covers deterministic workflow rules, mTLS worker configs, and advanced patterns.",
+      "category": "security",
+      "tags": [
+        "temporal",
+        "golang"
+      ],
+      "triggers": [
+        "temporal",
+        "golang",
+        "pro",
+        "building",
+        "durable",
+        "distributed",
+        "go",
+        "sdk",
+        "covers",
+        "deterministic",
+        "rules",
+        "mtls"
+      ],
+      "path": "skills/temporal-golang-pro/SKILL.md"
     },
     {
       "id": "temporal-python-pro",

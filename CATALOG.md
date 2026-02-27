@@ -2,7 +2,7 @@
 
 Generated at: 2026-02-08T00:00:00.000Z
 
-Total skills: 947
+Total skills: 951
 
 ## architecture (73)
 
@@ -102,7 +102,7 @@ workflow, handling phase checkpoints, managing git commits for tasks, or
 understanding th... |  | skill, implementing, tasks, according, conductor, tdd, handling, phase, checkpoints, managing, git, commits |
 | `zapier-make-patterns` | No-code automation democratizes workflow building. Zapier and Make (formerly Integromat) let non-developers automate business processes without writing code.... | zapier, make | zapier, make, no, code, automation, democratizes, building, formerly, integromat, let, non, developers |
 
-## business (42)
+## business (43)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -129,6 +129,7 @@ the relationship be... | driven | driven, context, development, skill, working, 
 onboarding/offboarding, PTO and leave, performance, compliant policies, and
 employee relations. Ask for jurisdic... | hr | hr, pro, professional, ethical, partner, hiring, onboarding, offboarding, pto, leave, performance, compliant |
 | `linkedin-cli` | Use when automating LinkedIn via CLI: fetch profiles, search people/companies, send messages, manage connections, create posts, and Sales Navigator. | linkedin, cli | linkedin, cli, automating, via, fetch, profiles, search, people, companies, send, messages, connections |
+| `local-legal-seo-audit` | Audit and improve local SEO for law firms, attorneys, forensic experts and legal/professional services sites with local presence, focusing on GBP, directorie... | local, legal, seo, audit | local, legal, seo, audit, improve, law, firms, attorneys, forensic, experts, professional, sites |
 | `market-sizing-analysis` | This skill should be used when the user asks to \\\"calculate TAM\\\",
 "determine SAM", "estimate SOM", "size the market", "calculate market
 opportunity", "w... | market, sizing | market, sizing, analysis, skill, should, used, user, asks, calculate, tam, determine, sam |
@@ -925,7 +926,7 @@ cross-platform de... | unity | unity, developer, games, optimized, scripts, effi
 | `wireshark-analysis` | This skill should be used when the user asks to "analyze network traffic with Wireshark", "capture packets for troubleshooting", "filter PCAP files", "follow... | wireshark | wireshark, analysis, skill, should, used, user, asks, analyze, network, traffic, capture, packets |
 | `workflow-automation` | Workflow automation is the infrastructure that makes AI agents reliable. Without durable execution, a network hiccup during a 10-step payment flow means lost... |  | automation, infrastructure, makes, ai, agents, reliable, without, durable, execution, network, hiccup, during |
 
-## security (125)
+## security (128)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -964,6 +965,7 @@ optimization, and ... | cloud | cloud, architect, specializing, aws, azure, gcp,
 | `code-review-checklist` | Comprehensive checklist for conducting thorough code reviews covering functionality, security, performance, and maintainability | code, checklist | code, checklist, review, conducting, thorough, reviews, covering, functionality, security, performance, maintainability |
 | `code-reviewer` | Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance optimization, and production reliability. Mas... | code | code, reviewer, elite, review, specializing, ai, powered, analysis, security, vulnerabilities, performance, optimization |
 | `codebase-cleanup-deps-audit` | You are a dependency security expert specializing in vulnerability scanning, license compliance, and supply chain security. Analyze project dependencies for ... | codebase, cleanup, deps, audit | codebase, cleanup, deps, audit, dependency, security, specializing, vulnerability, scanning, license, compliance, supply |
+| `convex` | Convex reactive backend expert: schema design, TypeScript functions, real-time subscriptions, auth, file storage, scheduling, and deployment. | convex | convex, reactive, backend, schema, typescript, functions, real, time, subscriptions, auth, file, storage |
 | `crypto-bd-agent` | Autonomous crypto business development patterns — multi-chain token discovery, 100-point scoring with wallet forensics, x402 micropayments, ERC-8004 on-chain... | crypto, business-development, token-scanning, x402, erc-8004, autonomous-agent, solana, ethereum, wallet-forensics | crypto, business-development, token-scanning, x402, erc-8004, autonomous-agent, solana, ethereum, wallet-forensics, bd, agent, autonomous |
 | `customs-trade-compliance` | Codified expertise for customs documentation, tariff classification, duty optimisation, restricted party screening, and regulatory compliance across multiple... | customs, trade, compliance | customs, trade, compliance, codified, expertise, documentation, tariff, classification, duty, optimisation, restricted, party |
 | `database-admin` | Expert database administrator specializing in modern cloud
@@ -1084,10 +1086,12 @@ analysis across multiple languages and frameworks | security, scanning, sast | s
 | `seo-authority-builder` | Analyzes content for E-E-A-T signals and suggests improvements to
 build authority and trust. Identifies missing credibility elements. Use
 PROACTIVELY for YMY... | seo, authority, builder | seo, authority, builder, analyzes, content, signals, suggests, improvements, trust, identifies, missing, credibility |
+| `seo-forensic-incident-response` | Investigate sudden drops in organic traffic or rankings and run a structured forensic SEO incident response with triage, root-cause analysis and recovery plan. | seo, forensic, incident, response | seo, forensic, incident, response, investigate, sudden, drops, organic, traffic, rankings, run, structured |
 | `service-mesh-expert` | Expert service mesh architect specializing in Istio, Linkerd, and cloud-native networking patterns. Masters traffic management, security policies, observabil... | service, mesh | service, mesh, architect, specializing, istio, linkerd, cloud, native, networking, masters, traffic, security |
 | `solidity-security` | Master smart contract security best practices to prevent common vulnerabilities and implement secure Solidity patterns. Use when writing smart contracts, aud... | solidity, security | solidity, security, smart, contract, prevent, common, vulnerabilities, secure, writing, contracts, auditing, existing |
 | `stride-analysis-patterns` | Apply STRIDE methodology to systematically identify threats. Use when analyzing system security, conducting threat modeling sessions, or creating security do... | stride | stride, analysis, apply, methodology, systematically, identify, threats, analyzing, security, conducting, threat, modeling |
 | `stripe-integration` | Implement Stripe payment processing for robust, PCI-compliant payment flows including checkout, subscriptions, and webhooks. Use when integrating Stripe paym... | stripe, integration | stripe, integration, payment, processing, robust, pci, compliant, flows, including, checkout, subscriptions, webhooks |
+| `temporal-golang-pro` | Use when building durable distributed systems with Temporal Go SDK. Covers deterministic workflow rules, mTLS worker configs, and advanced patterns. | temporal, golang | temporal, golang, pro, building, durable, distributed, go, sdk, covers, deterministic, rules, mtls |
 | `terraform-specialist` | Expert Terraform/OpenTofu specialist mastering advanced IaC
 automation, state management, and enterprise infrastructure patterns. Handles
 complex module desi... | terraform | terraform, opentofu, mastering, iac, automation, state, enterprise, infrastructure, complex, module, multi, cloud |

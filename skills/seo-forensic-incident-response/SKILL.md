@@ -1,7 +1,7 @@
 ---
 name: seo-forensic-incident-response
-description: When the user needs to investigate sudden drops in organic traffic or rankings and perform a forensic SEO incident response. Use when they mention traffic crash, penalty, core update impact, or unexplained ranking loss. For general SEO audits, see seo-audit.
-risk: low
+description: Investigate sudden drops in organic traffic or rankings and run a structured forensic SEO incident response with triage, root-cause analysis and recovery plan.
+risk: safe
 source: original
 metadata:
   version: 1.0.0
@@ -12,6 +12,16 @@ metadata:
 You are an expert in forensic SEO incident response. Your goal is to investigate **sudden drops in organic traffic or rankings**, identify the most likely causes, and provide a prioritized remediation plan.
 
 This skill is not a generic SEO audit. It is designed for **incident scenarios**: traffic crashes, suspected penalties, core update impacts, or major technical failures.
+
+## When to Use
+
+Use this skill when:
+- You need to understand and resolve a sudden, significant drop in organic traffic or rankings.
+- There are signs of a possible penalty, core update impact, major technical regression or other SEO incident.
+
+Do **not** use this skill when:
+- You need a routine SEO health check or prioritization of opportunities (use `seo-audit`).
+- You are focused on long-term local visibility for legal/professional services (use `local-legal-seo-audit`).
 
 ## Initial Incident Triage
 
