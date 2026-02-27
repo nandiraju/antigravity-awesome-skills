@@ -398,6 +398,13 @@ On each skill page you'll find the **Prompt Builder**:
 3. Or **Copy Full Content** – copies the full documentation
 4. Paste into your AI assistant (Claude, Cursor, Gemini, etc.)
 
+#### 🛠️ New: Interactive Prompt Builder
+The web app is no longer just a static catalog! When you click on any skill, you will see an **Interactive Prompt Builder** box.
+Instead of manually copying `@skill-name` and writing your requirements separately in your IDE:
+1. Type your specific project constraints into the text box (e.g., "Use React 19 and Tailwind").
+2. Click **Copy Prompt**.
+3. Your clipboard now has a fully formatted, ready-to-run prompt combining the skill invocation and your custom context!
+
 👉 **[View the Complete Skill Catalog (CATALOG.md)](CATALOG.md)**
 
 ---
@@ -409,8 +416,9 @@ We welcome contributions from the community! To add a new skill:
 1. **Fork** the repository.
 2. **Create a new directory** inside `skills/` for your skill.
 3. **Add a `SKILL.md`** with the required frontmatter (name, description, risk, source). See [docs/SKILL_ANATOMY.md](docs/SKILL_ANATOMY.md) and [docs/QUALITY_BAR.md](docs/QUALITY_BAR.md).
-4. **Run validation**: `npm run validate` (or `npm run validate:strict` for CI). Optionally run `python3 scripts/validate_references.py` if you touch workflows or bundles.
-5. **Submit a Pull Request**.
+4. **Add date tracking** (optional): Include `date_added: "YYYY-MM-DD"` in frontmatter. See [docs/SKILLS_DATE_TRACKING.md](docs/SKILLS_DATE_TRACKING.md) for details.
+5. **Run validation**: `npm run validate` (or `npm run validate:strict` for CI). Optionally run `python3 scripts/validate_references.py` if you touch workflows or bundles.
+6. **Submit a Pull Request**.
 
 Please ensure your skill follows the Antigravity/Claude Code best practices. Maintainers: see [docs/AUDIT.md](docs/AUDIT.md) for coherence checks and [.github/MAINTENANCE.md](.github/MAINTENANCE.md) for the full validation chain.
 
