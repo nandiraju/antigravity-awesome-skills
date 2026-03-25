@@ -1,13 +1,12 @@
 ---
 name: returns-reverse-logistics
-description: >
+description: Codified expertise for returns authorisation, receipt and inspection, disposition decisions, refund processing, fraud detection, and warranty claims management.
 risk: safe
-source: "https://github.com/ai-evos/agent-skills"
-date_added: "2026-02-27"
+source: https://github.com/ai-evos/agent-skills
+date_added: '2026-02-27'
 ---
 
 ## When to Use
-
 Use this skill when managing the product return lifecycle, including authorization, physical inspection, making disposition decisions (e.g., restock vs. liquidator), detecting return fraud, or processing warranty claims.
 
 # Returns & Reverse Logistics
@@ -210,7 +209,6 @@ Level 1 (Returns Associate) → Level 2 (Team Lead, 2 hours) → Level 3 (Return
 - For complete communication templates with variables and tone guidance, see [communication-templates.md](references/communication-templates.md)
 
 ## When to Use
-
 Use this skill when you need to **design, improve, or troubleshoot returns and reverse logistics operations**:
 
 - Defining or revising returns policies, grading standards, and disposition routes across channels.

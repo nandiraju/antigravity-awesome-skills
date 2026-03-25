@@ -1,13 +1,12 @@
 ---
 name: production-scheduling
-description: >
+description: Codified expertise for production scheduling, job sequencing, line balancing, changeover optimisation, and bottleneck resolution in discrete and batch manufacturing.
 risk: safe
-source: "https://github.com/ai-evos/agent-skills"
-date_added: "2026-02-27"
+source: https://github.com/ai-evos/agent-skills
+date_added: '2026-02-27'
 ---
 
 ## When to Use
-
 Use this skill when planning manufacturing operations, sequencing jobs to minimize changeover times, balancing production lines, resolving factory bottlenecks, or responding to unexpected equipment downtime and supply disruptions.
 
 # Production Scheduling
@@ -208,7 +207,6 @@ Track per shift and trend weekly:
 - For complete communication templates with variables and tone guidance, see [communication-templates.md](references/communication-templates.md)
 
 ## When to Use
-
 Use this skill when you need to **design or adjust production schedules and constraint‑focused execution plans**:
 
 - Sequencing jobs, balancing lines, and optimising changeovers in discrete or batch manufacturing.

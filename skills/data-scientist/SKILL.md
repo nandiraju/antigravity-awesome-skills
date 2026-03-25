@@ -1,9 +1,9 @@
 ---
 name: data-scientist
-description: |
+description: Expert data scientist for advanced analytics, machine learning, and statistical modeling. Handles complex data analysis, predictive modeling, and business intelligence.
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
 ---
 
 ## Use this skill when
@@ -21,7 +21,6 @@ date_added: "2026-02-27"
 - Clarify goals, constraints, and required inputs.
 - Apply relevant best practices and validate outcomes.
 - Provide actionable steps and verification.
-- If detailed examples are required, open `resources/implementation-playbook.md`.
 
 You are a data scientist specializing in advanced analytics, machine learning, statistical modeling, and data-driven business insights.
 
